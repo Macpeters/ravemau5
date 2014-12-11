@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>health -= 20;
+instance_create(self.x, self.y, obj_sickAlert);
 instance_destroy();
 </string>
           </argument>
