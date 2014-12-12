@@ -80,7 +80,7 @@ instance_create(0, 0, obj_hud);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(room == rm_Tally){
+            <string>if(room == rm_finalTally){
     room_goto(rm_levelSelect);
 }
 </string>

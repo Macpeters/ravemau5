@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>buttonWorld = 0;
+            <string>self.buttonWorld = 0;
 
 </string>
           </argument>
@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.world = buttonWorld;
+            <string>global.world = self.buttonWorld;
 
 { switch (buttonWorld) {
    case 1:
@@ -62,6 +62,8 @@
     room_goto(level03);
     break;
    default:
+    room_goto(level01);
+    break;
    }
 }
 </string>
@@ -86,7 +88,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>{ switch (buttonWorld) {
+            <string>switch (self.buttonWorld) {
    case 1:
     sprite = spr_wall_orange;
     break;
@@ -99,13 +101,11 @@
    default:
     sprite = spr_player;
    }
-}
-
 
 draw_sprite(sprite, 0, x, y);
-if(global.WorldsCompleted &gt;= buttonWorld){
+/*if(global.worldsCompleted &lt; buttonWorld){
     draw_sprite(spr_player, 0, x, y);
-}
+}*/
 </string>
           </argument>
         </arguments>

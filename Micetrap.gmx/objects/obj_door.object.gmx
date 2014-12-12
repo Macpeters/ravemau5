@@ -28,7 +28,7 @@
             <string>if(global.world &gt; global.worldsCompleted){
     global.worldsCompleted = global.world;
 }
-room_goto(endGame);
+room_goto(rm_finalTally);
 </string>
           </argument>
         </arguments>
