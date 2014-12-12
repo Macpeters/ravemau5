@@ -7,37 +7,98 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_cheese</sprite>
-    <sprite>sprites\spr_badCheese</sprite>
-    <sprite>sprites\spr_claw</sprite>
-    <sprite>sprites\spr_cage</sprite>
-    <sprite>sprites\spr_hole</sprite>
-    <sprite>sprites\spr_startButton</sprite>
-    <sprite>sprites\spr_door</sprite>
+    <sprites name="baddies">
+      <sprite>sprites\spr_beetle</sprite>
+    </sprites>
+    <sprites name="buttons">
+      <sprite>sprites\spr_startButton</sprite>
+    </sprites>
+    <sprites name="collectables">
+      <sprite>sprites\spr_cheese</sprite>
+      <sprite>sprites\spr_glowRing</sprite>
+    </sprites>
+    <sprites name="levelTiles">
+      <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_wall_blue</sprite>
+      <sprite>sprites\spr_wall_yellow</sprite>
+      <sprite>sprites\spr_wall_orange</sprite>
+      <sprite>sprites\spr_slimePipe_pink</sprite>
+      <sprite>sprites\spr_slimePipe_purple</sprite>
+      <sprite>sprites\spr_slimePipe_green</sprite>
+    </sprites>
+    <sprites name="traps">
+      <sprite>sprites\spr_badCheese</sprite>
+      <sprite>sprites\spr_cage</sprite>
+      <sprite>sprites\spr_claw</sprite>
+      <sprite>sprites\spr_hole</sprite>
+      <sprite>sprites\spr_sewerWater</sprite>
+    </sprites>
+    <sprites name="UI">
+      <sprite>sprites\spr_healthAlert</sprite>
+      <sprite>sprites\spr_deathAlert</sprite>
+      <sprite>sprites\spr_sickAlert</sprite>
+    </sprites>
+    <sprite>sprites\sprite13</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main</background>
     <background>background\bg_title</background>
     <background>background\bg_end</background>
+    <background>background\background3</background>
+    <background>background\bg_sewer</background>
+    <background>background\parlour</background>
+    <background>background\disco</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font_hud</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_cheese</object>
-    <object>objects\obj_badCheese</object>
-    <object>objects\obj_CTRL</object>
-    <object>objects\obj_ScreenCtrl</object>
-    <object>objects\obj_startButton</object>
-    <object>objects\obj_door</object>
-    <object>objects\obj_Hole</object>
-    <object>objects\obj_Claw</object>
+    <objects name="baddies">
+      <object>objects\obj_beetle</object>
+    </objects>
+    <objects name="buttons">
+      <object>objects\obj_startButton</object>
+      <object>objects\levelSelectButton</object>
+    </objects>
+    <objects name="collectables">
+      <object>objects\obj_cheese</object>
+      <object>objects\obj_glowRing</object>
+    </objects>
+    <objects name="levelTiles">
+      <object>objects\obj_door</object>
+      <object>objects\obj_wall</object>
+      <object>objects\obj_platform</object>
+    </objects>
+    <objects name="traps">
+      <object>objects\obj_badCheese</object>
+      <object>objects\obj_Claw</object>
+      <object>objects\obj_Hole</object>
+      <object>objects\obj_sewerWater</object>
+    </objects>
+    <objects name="UI">
+      <object>objects\obj_healthAlert</object>
+      <object>objects\obj_glowRingAlert</object>
+      <object>objects\obj_sickAlert</object>
+      <object>objects\obj_deathAlert</object>
+      <object>objects\obj_hud</object>
+      <object>objects\obj_finalTally</object>
+      <object>objects\obj_killAlert</object>
+    </objects>
+    <objects name="controllers">
+      <object>objects\obj_CTRL</object>
+      <object>objects\obj_ScreenCtrl</object>
+      <object>objects\obj_levelSelectCtrl</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Title</room>
+    <room>rooms\rm_levelSelect</room>
     <room>rooms\level01</room>
-    <room>rooms\rm_End</room>
+    <room>rooms\level02</room>
+    <room>rooms\level03</room>
+    <room>rooms\rm_finalTally</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

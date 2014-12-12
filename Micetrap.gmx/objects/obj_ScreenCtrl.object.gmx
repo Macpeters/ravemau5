@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="9" enumb="32">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,11 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room=rm_Title){
-    room_goto_next();
-} else{
-    room_goto(rm_Title);
-}
+            <string>global.world = 1;
+global.worldsCompleted = 0;
+global.points = 0;
+global.glowRings = 0;
+global.beetleBaddies = 0;
+
 </string>
           </argument>
         </arguments>
