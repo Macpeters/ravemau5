@@ -104,7 +104,7 @@ if(sprite_alpha &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>///Draw sprite
-draw_sprite_ext( self.sprite_index, 0, self.x, self.y, 1, 1, 0, c_white, sprite_alpha );
+draw_sprite_ext( self.sprite_index, 0, self.x, self.y, image_xscale, image_yscale, 0, c_white, sprite_alpha );
 </string>
           </argument>
         </arguments>
