@@ -100,6 +100,23 @@ the view will revert to default settings */
 gvW = gvWStart;
 gvH = gvHStart;
 
+
+//Backgrounds
+//8 is the max number of backgrounds allowed in gamemaker
+for(i=0; i&lt;8; i++){
+    //don't worry about backgrounds that haven't been chosen
+    if(background_visible[i] == true){
+        //horizontal
+        if(background_width[i] != room_width){
+            background_x[i] = view_xview[0]/(room_width-view_wview[0])*(room_width-background_width[i]);
+        }
+        //vertical 
+        if(background_height[i] != room_height){
+            background_y[i] = view_yview[0]/(room_height-view_hview[0])*(room_height-background_height[i]);
+        }
+    }
+}
+
 </string>
           </argument>
         </arguments>

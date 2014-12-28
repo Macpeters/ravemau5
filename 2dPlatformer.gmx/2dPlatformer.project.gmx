@@ -52,13 +52,32 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\tile_test_spikes</background>
-    <background>background\bg_hills</background>
-    <background>background\bg_sewer</background>
-    <background>background\bg_title</background>
-    <background>background\bg_disco</background>
-    <background>background\bg_parlour</background>
-    <background>background\bg_main</background>
+    <backgrounds name="disco">
+      <background>background\bg_disco</background>
+      <background>background\bg_disco01</background>
+      <background>background\bg_disc02</background>
+      <background>background\bb_disco03</background>
+      <background>background\bg_disco04</background>
+    </backgrounds>
+    <backgrounds name="sewer">
+      <background>background\bg_sewer</background>
+      <background>background\bg_sewer01</background>
+      <background>background\bg_sewer02</background>
+      <background>background\bg_sewer03</background>
+    </backgrounds>
+    <backgrounds name="parlour">
+      <background>background\bg_parlour</background>
+      <background>background\bg_parlour01</background>
+      <background>background\bg_parlour02</background>
+      <background>background\bg_parlour03</background>
+    </backgrounds>
+    <backgrounds name="screens">
+      <background>background\bg_title</background>
+      <background>background\bg_main</background>
+    </backgrounds>
+    <backgrounds name="ice">
+      <background>background\bg_hills</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
