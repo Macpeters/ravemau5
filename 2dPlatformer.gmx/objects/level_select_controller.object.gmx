@@ -25,12 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>num_levels = 4;
+            <string>num_levels = 5;
 
-for(i=0; i&lt;num_levels; i++){
-    button = instance_create(200 + (i*50), 100, obj_level_select_button);
+for(i=1; i&lt;num_levels; i++){
+    button = instance_create(50 + (i*100), 100, obj_level_select_button);
     button.buttonWorld = i;
 }
+
+
+button = instance_create(20, 400, obj_level_select_button);
+    button.buttonWorld = global.BUTTON_SHOPPE;
 </string>
           </argument>
         </arguments>

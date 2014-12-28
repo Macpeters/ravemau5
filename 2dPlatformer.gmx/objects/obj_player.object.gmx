@@ -118,7 +118,7 @@ if(attClock &gt; 0 &amp;&amp; curAttack == 0){
 //Direction
 if(hspd &gt; 0){
     image_xscale = 1;
-}else{
+}else if(hspd &lt; 0){
     image_xscale = -1;
 }
 </string>

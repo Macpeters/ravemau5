@@ -50,13 +50,16 @@
             <kind>1</kind>
             <string>world = global.world;
 { switch (world) {
-   case 1:
-    sprite = spr_solid_orange;
-    break;
-   case 2:
+   case global.WORLD_ICE:
     sprite = spr_solid_blue;
     break;
-   case 3: 
+   case global.WORLD_SEWER:
+    sprite = spr_solid_orange;
+    break;
+   case global.WORLD_PARLOUR:
+    sprite = spr_solid_pink
+    break;
+   case global.WORLD_DISCO: 
     sprite = spr_solid_yellow;
     break;
    default:

@@ -100,13 +100,15 @@ multiG = 1;
 //vertical movement
 for(i=0; i &lt; abs(vspd); i += 1){
     if(place_meeting(x, y+sign(vspd), par_solid)){
+        vspd = 0;                                         
+    } else if(place_meeting(x, y+sign(vspd), par_jumpthrough) &amp;&amp; vspd &gt; 0){
         vspd = 0;
     }else {
         y += sign(vspd);
     }
 }
 
-if(place_meeting(x, y+1, par_solid)){
+if(place_meeting(x, y+1, par_solid) || place_meeting(x, y+1, par_jumpthrough)){
     inAir = false;
 }else {
     inAir = true;
