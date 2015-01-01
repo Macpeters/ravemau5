@@ -26,27 +26,19 @@
           <argument>
             <kind>1</kind>
             <string>///Setup
-
+global.playerChoice = 0;
 //Key Bindings
 globalvar kUp, kDown, kLeft, kRight, kJump, kAction;
 kUp = vk_up;
 kDown = vk_down;
 kLeft = vk_left;
+setConstants();
+
 kRight = vk_right;
 kJump = vk_space;
 kAction = ord("X");
 
-//Screen Control
 global.world = 0;
-//worlds
-global.WORLD_ICE = 1;
-global.WORLD_SEWER = 2;
-global.WORLD_PARLOUR = 3;
-global.WORLD_DISCO = 4;
-//buttons
-global.LEVEL_SELECTION = 100;
-global.BUTTON_PLAY = 101;
-global.BUTTON_SHOPPE = 102;
 
 //Scoring
 global.glowRings = 0;

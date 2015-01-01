@@ -31,6 +31,8 @@ maxHp = 10;
 attClock = 0;
 curAttack = 0;
 hurtClock = 0;
+
+get_player_sprite(self);
 </string>
           </argument>
         </arguments>
@@ -88,17 +90,16 @@ if(hurtClock &gt; 0){
             <kind>1</kind>
             <string>///Sprites
 event_inherited();
-//keyboard_check(kRight) = keyboard_check(kLeft)
 if(inAir == false &amp;&amp; keyboard_check(kRight) == keyboard_check(kLeft) &amp;&amp; sprite_index != spr_player_stand){
-    sprite_index = spr_player_stand;
+    sprite_index = standing_sprite;
     image_index = 0;
 }
 if(inAir == false &amp;&amp; keyboard_check(kRight) != keyboard_check(kLeft) &amp;&amp; sprite_index != spr_player_run){
-    sprite_index = spr_player_run;
+    sprite_index = running_sprite;
     image_index = 0;
 }
 if(inAir == true){
-    sprite_index = spr_player_air;
+    sprite_index = jumping_sprite;
     if(vspd &lt;= -1){
         image_index = 0;
     }else if(vspd &gt;= 1){

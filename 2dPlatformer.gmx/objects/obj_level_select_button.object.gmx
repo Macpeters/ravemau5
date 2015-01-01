@@ -50,10 +50,7 @@ spawnY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-global.world = self.buttonWorld;
-
+            <string>global.world = self.buttonWorld;
 { switch (buttonWorld) {
    case global.BUTTON_SHOPPE:
     room_goto(roo_store);
