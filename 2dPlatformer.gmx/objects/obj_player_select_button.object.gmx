@@ -73,14 +73,20 @@ spawnY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (self.playerChoice) {
+            <string>
+switch (playerChoice) {
    case global.SKRILLIX:
     sprite = spr_btn_skrillix_player;
-   break;;
+   break;
+   case global.PINK_FUNFUR:
+    sprite = spr_btn_pink_funfur;
+   break;   
+   case global.BLUE_FUNFUR:
+    sprite = spr_btn_blue_funfur;
+   break;
    default:
     sprite = spr_btn_basic_player;
    }
-
 draw_sprite(sprite, 0, x, y);
 </string>
           </argument>

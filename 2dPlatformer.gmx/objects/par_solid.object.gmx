@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>world = 0;
+            <string>get_solid_sprite();
 </string>
           </argument>
         </arguments>
@@ -48,29 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>world = global.world;
-{ switch (world) {
-   case global.WORLD_ICE:
-    sprite = spr_solid_blue;
-    break;
-   case global.WORLD_SEWER:
-    sprite = spr_solid_orange;
-    break;
-   case global.WORLD_PARLOUR:
-    sprite = spr_solid_pink
-    break;
-   case global.WORLD_DISCO: 
-    sprite = spr_solid_yellow;
-    break;
-   default:
-    sprite = spr_solid_square
-   }
-}
-draw_sprite(sprite, 0, x, y);
-
-
-
-
+            <string>draw_sprite(sprite, 0, x, y);
 </string>
           </argument>
         </arguments>

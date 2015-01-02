@@ -25,15 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>button = instance_create(100, 100, obj_level_select_button);
+            <string>//back to level selection
+button = instance_create(20, 20, obj_level_select_button);
 button.buttonWorld = global.BUTTON_PLAY;
 
+num_player_choices = global.NUM_PLAYER_CHOICES;
+//num_player_choices = 4
+for(i=0; i&lt;num_player_choices; i++){
+    button = instance_create(i * 100, 200, obj_player_select_button);
+    button.playerChoice = i;
+}
+/*
 basicPlayer = instance_create(100, 200, obj_player_select_button);
 basicPlayer.playerChoice = global.BASIC_PLAYER;
 
 skrillixPlayer = instance_create(200, 200, obj_player_select_button);
 skrillixPlayer.playerChoice = global.SKRILLIX;
-
+*/
 
 
 
@@ -68,12 +76,23 @@ playerChoice = global.playerChoice;
    case global.SKRILLIX:
     playerSprite = spr_btn_skrillix_player;
     break;
+   case global.PINK_FUNFUR:
+    playerSprite = spr_btn_pink_funfur;
+    break;
+   case global.BLUE_FUNFUR:
+    playerSprite = spr_btn_blue_funfur;
+    break;
    default:
     playerSprite = spr_btn_basic_player;
    }
 }
-draw_text(0, 350, "Your Player:");
-draw_sprite(playerSprite, 0, 50, 400);
+//player area
+draw_sprite_ext( spr_hud, 0, 0, 350, 1, 4, 0, c_white, 1 );
+draw_text(0, 368, "Your Player:");
+draw_sprite(playerSprite, 0, 50, 410);
+//stats
+draw_sprite(spr_glow_ring, 0, 200, 410);
+draw_text(250,410,global.glowRings)
 </string>
           </argument>
         </arguments>

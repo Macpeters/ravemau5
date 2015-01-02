@@ -25,17 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fon_hud);
+            <string>draw_sprite(spr_hud, 0, 0, 0);
+draw_set_font(fon_hud);
 draw_set_color(c_white);
 
-draw_sprite(spr_glow_ring, 0, 100, 20);
-draw_text(132,20,global.glowRings)
+draw_sprite(spr_glow_ring, 0, 100, 0);
+draw_text(132,0,global.glowRings)
 
-draw_sprite(spr_health_alert, 0, 160, 20);
-draw_text(192,20,global.points)
+draw_sprite(spr_health_alert, 0, 160, 0);
+draw_text(192,0,global.points)
 
-draw_text(320, 20, "HP: ");
-draw_text(380, 20, global.hp);
+draw_text(320, 0, "HP: ");
+draw_text(380, 0, global.hp);
 
 
 </string>

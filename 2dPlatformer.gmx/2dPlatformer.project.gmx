@@ -18,6 +18,16 @@
         <sprite>sprites\spr_skrillix_run</sprite>
         <sprite>sprites\spr_skrillix_air</sprite>
       </sprites>
+      <sprites name="pink_funfur">
+        <sprite>sprites\spr_pink_funfur_stand</sprite>
+        <sprite>sprites\spr_pink_funfur_air</sprite>
+        <sprite>sprites\spr_pink_funfur_run</sprite>
+      </sprites>
+      <sprites name="blue_funfur">
+        <sprite>sprites\spr_blue_funfur_stand</sprite>
+        <sprite>sprites\spr_blue_funfur_air</sprite>
+        <sprite>sprites\spr_blue_funfur_run</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_beetle</sprite>
@@ -63,7 +73,10 @@
       <sprites name="player_buttons">
         <sprite>sprites\spr_btn_basic_player</sprite>
         <sprite>sprites\spr_btn_skrillix_player</sprite>
+        <sprite>sprites\spr_btn_blue_funfur</sprite>
+        <sprite>sprites\spr_btn_pink_funfur</sprite>
       </sprites>
+      <sprite>sprites\spr_hud</sprite>
     </sprites>
     <sprites name="Alerts">
       <sprite>sprites\spr_health_alert</sprite>
@@ -104,6 +117,8 @@
     <scripts name="In_Game">
       <script>scripts\unstick.gml</script>
       <script>scripts\get_player_sprite.gml</script>
+      <script>scripts\get_jumpthrough_sprite.gml</script>
+      <script>scripts\get_solid_sprite.gml</script>
     </scripts>
     <script>scripts\setConstants.gml</script>
   </scripts>
