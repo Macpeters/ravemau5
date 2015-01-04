@@ -1,6 +1,11 @@
 playerChoice = global.playerChoice;
 
 { switch (playerChoice) {
+    case global.SHUTTER_SHADE:
+     standing_sprite = spr_shutter_shade_stand;
+     running_sprite = spr_shutter_shade_run;
+     jumping_sprite = spr_shutter_shade_air;
+    break;
    case global.SKRILLIX:
     standing_sprite = spr_skrillix_stand;
     running_sprite = spr_skrillix_run;

@@ -158,6 +158,7 @@
     <instance objName="par_solid" x="768" y="448" name="inst_75D29768" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="800" y="448" name="inst_3C7ACAC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="896" y="192" name="inst_BDF6DDF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="par_weapon" x="512" y="256" name="inst_764EFFB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

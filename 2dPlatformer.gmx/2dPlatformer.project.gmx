@@ -28,6 +28,11 @@
         <sprite>sprites\spr_blue_funfur_air</sprite>
         <sprite>sprites\spr_blue_funfur_run</sprite>
       </sprites>
+      <sprites name="shutter_shades">
+        <sprite>sprites\spr_shutter_shade_stand</sprite>
+        <sprite>sprites\spr_shutter_shade_air</sprite>
+        <sprite>sprites\spr_shutter_shade_run</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_beetle</sprite>
@@ -71,10 +76,11 @@
         <sprite>sprites\spr_lvl_disco</sprite>
       </sprites>
       <sprites name="player_buttons">
-        <sprite>sprites\spr_btn_basic_player</sprite>
-        <sprite>sprites\spr_btn_skrillix_player</sprite>
+        <sprite>sprites\spr_btn_basic</sprite>
+        <sprite>sprites\spr_btn_skrillix</sprite>
         <sprite>sprites\spr_btn_blue_funfur</sprite>
         <sprite>sprites\spr_btn_pink_funfur</sprite>
+        <sprite>sprites\spr_btn_shutter_shade</sprite>
       </sprites>
       <sprite>sprites\spr_hud</sprite>
     </sprites>
@@ -82,6 +88,11 @@
       <sprite>sprites\spr_health_alert</sprite>
       <sprite>sprites\spr_death_alert</sprite>
       <sprite>sprites\spr_sick_alert</sprite>
+    </sprites>
+    <sprites name="Projectiles">
+      <sprite>sprites\space_invader</sprite>
+      <sprite>sprites\candy_bomb</sprite>
+      <sprite>sprites\candy_bullet</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -116,11 +127,14 @@
   <scripts name="scripts">
     <scripts name="In_Game">
       <script>scripts\unstick.gml</script>
-      <script>scripts\get_player_sprite.gml</script>
-      <script>scripts\get_jumpthrough_sprite.gml</script>
-      <script>scripts\get_solid_sprite.gml</script>
     </scripts>
     <script>scripts\setConstants.gml</script>
+    <scripts name="get_sprites">
+      <script>scripts\get_solid_sprite.gml</script>
+      <script>scripts\get_jumpthrough_sprite.gml</script>
+      <script>scripts\get_player_sprite.gml</script>
+      <script>scripts\get_player_btn_sprite.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fon_hud</font>
@@ -139,6 +153,8 @@
         <object>objects\par_hazard</object>
         <object>objects\par_alert</object>
         <object>objects\par_jumpthrough</object>
+        <object>objects\par_weapon</object>
+        <object>objects\par_projectile</object>
       </objects>
       <objects name="Player">
         <object>objects\obj_player</object>
