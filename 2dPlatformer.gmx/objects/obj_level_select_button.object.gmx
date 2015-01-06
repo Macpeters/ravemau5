@@ -56,16 +56,16 @@ spawnY = y;
     room_goto(roo_store);
     break;
    case global.WORLD_ICE:
-    room_goto(roo_test);
+    room_goto(roo_ice01);
     break;
    case global.WORLD_SEWER:
-    room_goto(roo_level01);
+    room_goto(roo_sewer01);
     break;
    case global.WORLD_PARLOUR:
-    room_goto(roo_level02);
+    room_goto(roo_parlour01);
     break;
    case global.WORLD_DISCO: 
-    room_goto(roo_level03);
+    room_goto(roo_disco01);
     break;
    default:
     room_goto(roo_level_select);

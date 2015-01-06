@@ -105,7 +105,6 @@
     <backgrounds name="sewer">
       <background>background\bg_sewer01</background>
       <background>background\bg_sewer02</background>
-      <background>background\bg_sewer03</background>
     </backgrounds>
     <backgrounds name="parlour">
       <background>background\bg_parlour01</background>
@@ -184,10 +183,10 @@
   <rooms name="rooms">
     <room>rooms\roo_level_select</room>
     <room>rooms\roo_store</room>
-    <room>rooms\roo_test</room>
-    <room>rooms\roo_level01</room>
-    <room>rooms\roo_level02</room>
-    <room>rooms\roo_level03</room>
+    <room>rooms\roo_sewer01</room>
+    <room>rooms\roo_parlour01</room>
+    <room>rooms\roo_ice01</room>
+    <room>rooms\roo_disco01</room>
   </rooms>
   <constants number="6">
     <constant name="TR_NONE">-1</constant>

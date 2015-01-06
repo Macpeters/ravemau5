@@ -1,7 +1,7 @@
 //worlds
-global.WORLD_ICE = 1;
-global.WORLD_SEWER = 2;
-global.WORLD_PARLOUR = 3;
+global.WORLD_SEWER = 1;
+global.WORLD_PARLOUR = 2;
+global.WORLD_ICE = 3;
 global.WORLD_DISCO = 4;
 global.NUM_WORLDS = 5;
 //buttons
