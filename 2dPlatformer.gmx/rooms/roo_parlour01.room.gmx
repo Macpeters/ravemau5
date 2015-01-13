@@ -349,6 +349,7 @@
     <instance objName="par_weapon" x="640" y="32" name="inst_518F5D59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_weapon" x="1056" y="32" name="inst_DA035123" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_weapon" x="1600" y="32" name="inst_AA3EE47B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_slime" x="288" y="96" name="inst_EF25013D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

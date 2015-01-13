@@ -36,6 +36,7 @@
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_beetle</sprite>
+      <sprite>sprites\spr_enemy_slime</sprite>
     </sprites>
     <sprites name="Interactables">
       <sprite>sprites\spr_trigger_square</sprite>
@@ -83,6 +84,7 @@
         <sprite>sprites\spr_btn_shutter_shade</sprite>
       </sprites>
       <sprite>sprites\spr_hud</sprite>
+      <sprite>sprites\spr_btn_exitLevel</sprite>
     </sprites>
     <sprites name="Alerts">
       <sprite>sprites\spr_health_alert</sprite>
@@ -160,6 +162,7 @@
       </objects>
       <objects name="Enemy">
         <object>objects\obj_enemy_beetle</object>
+        <object>objects\obj_enemy_slime</object>
       </objects>
       <objects name="Interactables">
         <object>objects\obj_moving_platform</object>
@@ -178,6 +181,7 @@
     <objects name="Buttons">
       <object>objects\obj_level_select_button</object>
       <object>objects\obj_player_select_button</object>
+      <object>objects\obj_exit_level_button</object>
     </objects>
   </objects>
   <rooms name="rooms">

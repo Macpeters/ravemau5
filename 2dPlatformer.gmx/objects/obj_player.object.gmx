@@ -201,7 +201,7 @@ if(hp &lt;= 0){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="par_projectile">
+    <event eventtype="4" ename="obj_enemy_slime">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -219,9 +219,11 @@ if(hp &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>///Get hurt
-if(hurtClock == 0) {
+if hurtClock == 0 &amp;&amp; other.hurtClock == 0 &amp;&amp; sign(x-other.x) == other.image_xscale {
  hp -= 1;
  hurtClock = 30;
+ vspd = -8;
+ hspd = sign(x-other.x)*16;
 }
 </string>
           </argument>
@@ -335,6 +337,33 @@ if !vspd &gt; 0 &amp;&amp; hurtClock == 0 &amp;&amp; other.hurtClock == 0 &amp;&
  hurtClock = 30;
  vspd = -8;
  hspd = sign(x-other.x)*16;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="par_projectile">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Get hurt
+if(hurtClock == 0) {
+ hp -= 1;
+ hurtClock = 30;
 }
 </string>
           </argument>
