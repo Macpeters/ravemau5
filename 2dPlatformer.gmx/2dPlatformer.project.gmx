@@ -85,6 +85,11 @@
       </sprites>
       <sprite>sprites\spr_hud</sprite>
       <sprite>sprites\spr_btn_exitLevel</sprite>
+      <sprites name="joystick">
+        <sprite>sprites\spr_js_base</sprite>
+        <sprite>sprites\spr_js_stick</sprite>
+        <sprite>sprites\spr_js_drag</sprite>
+      </sprites>
     </sprites>
     <sprites name="Alerts">
       <sprite>sprites\spr_health_alert</sprite>
@@ -96,6 +101,7 @@
       <sprite>sprites\candy_bomb</sprite>
       <sprite>sprites\candy_bullet</sprite>
     </sprites>
+    <sprite>sprites\sprite59</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="disco">
@@ -182,6 +188,10 @@
       <object>objects\obj_level_select_button</object>
       <object>objects\obj_player_select_button</object>
       <object>objects\obj_exit_level_button</object>
+      <objects name="joystick">
+        <object>objects\obj_js_base</object>
+        <object>objects\obj_js_stick</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
