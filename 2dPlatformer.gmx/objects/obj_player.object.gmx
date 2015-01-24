@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
+            <string>///Setup
+event_inherited();
 hp = 10;
 maxHp = 10;
 attClock = 0;
@@ -145,14 +146,18 @@ if(hspd &gt; 0){
             <string>///Controls
 
 //jumping
-if(keyboard_check(kJump) &amp;&amp; inAir == false){
+jumping = keyboard_check(kJump) || global.upMove;
+if(jumping &amp;&amp; inAir == false){
    vspd = -15;
 }
 //left and right movement
-if(keyboard_check(kRight) &amp;&amp; !keyboard_check(kLeft) &amp;&amp; hspd &lt; 10){
+movingRight = keyboard_check(kRight) || global.rightMove;
+movingLeft = keyboard_check(kLeft) || global.leftMove;
+
+if(movingRight &amp;&amp; !movingLeft &amp;&amp; hspd &lt; 10){
     hspd = min(hspd+2, 10);
 }
-if(keyboard_check(kLeft) &amp;&amp; !keyboard_check(kRight) &amp;&amp; hspd &gt; -10){
+if(movingLeft &amp;&amp; !movingRight &amp;&amp; hspd &gt; -10){
     hspd = max(hspd-2, -10);
 }
 
@@ -195,35 +200,6 @@ if(hp &lt;= 0){
   instance_destroy();
 }else if(hp &gt; maxHp){
     hp = maxHp;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemy_slime">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Get hurt
-if hurtClock == 0 &amp;&amp; other.hurtClock == 0 &amp;&amp; sign(x-other.x) == other.image_xscale {
- hp -= 1;
- hurtClock = 30;
- vspd = -8;
- hspd = sign(x-other.x)*16;
 }
 </string>
           </argument>
@@ -309,6 +285,35 @@ with(other){
           <argument>
             <kind>1</kind>
             <string>room_goto(roo_level_select);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemy_slime">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Get hurt
+if hurtClock == 0 &amp;&amp; other.hurtClock == 0 &amp;&amp; sign(x-other.x) == other.image_xscale {
+ hp -= 1;
+ hurtClock = 30;
+ vspd = -8;
+ hspd = sign(x-other.x)*16;
+}
 </string>
           </argument>
         </arguments>
