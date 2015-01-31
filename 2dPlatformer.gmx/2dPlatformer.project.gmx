@@ -88,7 +88,6 @@
       <sprites name="joystick">
         <sprite>sprites\spr_js_base</sprite>
         <sprite>sprites\spr_js_stick</sprite>
-        <sprite>sprites\spr_js_drag</sprite>
       </sprites>
     </sprites>
     <sprites name="Alerts">
@@ -101,7 +100,7 @@
       <sprite>sprites\candy_bomb</sprite>
       <sprite>sprites\candy_bullet</sprite>
     </sprites>
-    <sprite>sprites\sprite59</sprite>
+    <sprite>sprites\spr_blank_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="disco">
@@ -141,6 +140,7 @@
       <script>scripts\get_jumpthrough_sprite.gml</script>
       <script>scripts\get_player_sprite.gml</script>
       <script>scripts\get_player_btn_sprite.gml</script>
+      <script>scripts\get_alert_sprite.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -153,15 +153,15 @@
     <object>objects\obj_store_controller</object>
     <objects name="In-Game">
       <objects name="Parents">
-        <object>objects\par_solid</object>
-        <object>objects\par_entity</object>
-        <object>objects\par_player</object>
-        <object>objects\par_enemy</object>
-        <object>objects\par_hazard</object>
         <object>objects\par_alert</object>
+        <object>objects\par_enemy</object>
+        <object>objects\par_entity</object>
+        <object>objects\par_hazard</object>
         <object>objects\par_jumpthrough</object>
-        <object>objects\par_weapon</object>
+        <object>objects\par_player</object>
         <object>objects\par_projectile</object>
+        <object>objects\par_solid</object>
+        <object>objects\par_weapon</object>
       </objects>
       <objects name="Player">
         <object>objects\obj_player</object>

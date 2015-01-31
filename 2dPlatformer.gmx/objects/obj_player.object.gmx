@@ -39,7 +39,7 @@ get_player_sprite(self);
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -195,9 +195,10 @@ if keyboard_check(kAction) &amp;&amp; attClock == false {
             <string>///Check stats
 global.hp = hp;
 if(hp &lt;= 0){
-  deathAlert = instance_create(self.x, self.y, par_alert);
-  deathAlert.sprite_index = spr_death_alert;
-  instance_destroy();
+      global.hp = 0;
+      alert = instance_create(self.x, self.y, par_alert);
+      alert.alertType = global.DEATH;
+      instance_destroy();
 }else if(hp &gt; maxHp){
     hp = maxHp;
 }
@@ -223,8 +224,9 @@ if(hp &lt;= 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alert = instance_create(self.x, self.y, par_alert);
-alert.sprite_index = spr_glow_ring;
+            <string>///Create alert, add points
+alert = instance_create(self.x, self.y, par_alert);
+alert.alertType = global.GLOWRING;
 
 global.points += 100;
 global.glowRings += 1;
@@ -254,11 +256,11 @@ with(other){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alert = instance_create(self.x, self.y, par_alert);
-
+            <string>///gain health, destroy cheese
+alert = instance_create(self.x, self.y, par_alert);
+alert.alertType = global.CHEESE;
 hp += 1;
 global.points += 10;
-
 with(other){
     instance_destroy();
 }
@@ -392,11 +394,14 @@ if(hurtClock == 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!instance_exists(par_alert)){
-    hp -= 1;
-    sickAlert = instance_create(self.x, self.y, par_alert);
-    sickAlert.sprite_index = spr_sick_alert;
-    sickAlert.dir = -1;
+            <string>///If there is no current alert, add a sick alert and take health
+
+if(!instance_exists(par_alert)){
+    hp -= 1;  
+    if(hp &gt; 0){
+          alert = instance_create(self.x, self.y, par_alert);
+          alert.alertType = global.SICK;
+    }
 }
 </string>
           </argument>

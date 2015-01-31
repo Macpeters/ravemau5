@@ -19,9 +19,9 @@
     <option_android_arch_mipsr2>false</option_android_arch_mipsr2>
     <option_android_arch_mipsr2sf>false</option_android_arch_mipsr2sf>
     <option_android_arch_x86>True</option_android_arch_x86>
-    <option_android_build_version>0</option_android_build_version>
+    <option_android_build_version>2</option_android_build_version>
     <option_android_color_depth>0</option_android_color_depth>
-    <option_android_display_name>2dPlatformer</option_android_display_name>
+    <option_android_display_name>Ravemau5</option_android_display_name>
     <option_android_flurry_enable>0</option_android_flurry_enable>
     <option_android_flurry_id></option_android_flurry_id>
     <option_android_google_analytics_enable>0</option_android_google_analytics_enable>
@@ -52,9 +52,9 @@
     <option_android_mobage_version></option_android_mobage_version>
     <option_android_orient_landscape>true</option_android_orient_landscape>
     <option_android_orient_portrait>true</option_android_orient_portrait>
-    <option_android_orientation>2</option_android_orientation>
+    <option_android_orientation>1</option_android_orientation>
     <option_android_ouya_icon>Configs\Default\android\icons\ouyaIcon.png</option_android_ouya_icon>
-    <option_android_package_company>companyname</option_android_package_company>
+    <option_android_package_company>macpeters</option_android_package_company>
     <option_android_package_domain>com</option_android_package_domain>
     <option_android_package_product>ravemau5</option_android_package_product>
     <option_android_permission_flags>8</option_android_permission_flags>
@@ -72,7 +72,7 @@
     <option_changeresolution>false</option_changeresolution>
     <option_closeesc>true</option_closeesc>
     <option_colordepth>0</option_colordepth>
-    <option_display_name>GameMaker: Studio</option_display_name>
+    <option_display_name>Ravemau5</option_display_name>
     <option_displayerrors>True</option_displayerrors>
     <option_facebook_appid></option_facebook_appid>
     <option_facebook_enable>0</option_facebook_enable>
@@ -256,7 +256,7 @@
     <option_win8_analytics_id></option_win8_analytics_id>
     <option_win8_build_version>0</option_win8_build_version>
     <option_win8_certificate_location>Windows8_TemporaryKey.pfx</option_win8_certificate_location>
-    <option_win8_display_name>2dPlatformer</option_win8_display_name>
+    <option_win8_display_name>Ravemau5</option_win8_display_name>
     <option_win8_internet_capable>0</option_win8_internet_capable>
     <option_win8_interpolate>-1</option_win8_interpolate>
     <option_win8_landscape_allowed>-1</option_win8_landscape_allowed>
