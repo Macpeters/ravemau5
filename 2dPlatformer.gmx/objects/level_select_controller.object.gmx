@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>num_levels = global.NUM_WORLDS;
+            <string>///Create world buttons, shoppe button
+num_levels = global.NUM_WORLDS;
 
 for(i=1; i&lt;num_levels; i++){
     button = instance_create(50 + (i*100), 100, obj_level_select_button);

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>get_solid_sprite();
+            <string>///Get the sprite based on the world
+get_solid_sprite();
 </string>
           </argument>
         </arguments>
@@ -48,7 +49,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sprite, 0, x, y);
+            <string>///Default draw function for the gotten sprite
+draw_sprite(sprite, 0, x, y);
 </string>
           </argument>
         </arguments>

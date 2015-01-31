@@ -157,13 +157,13 @@ if other.y &lt; y &amp;&amp; other.vspd &gt; 0 &amp;&amp; other.hurtClock == 0 {
  other.vspd = -12;
  global.points += 50;
  with instance_create(x,y,par_alert) {
-  sprite_index = spr_enemy_beetle;
-  dir = -1;
-  image_xscale = other.image_xscale;
-  image_yscale = -1;
-  depth = -1000;
-  hspd = other.hspd;
-  vspd = other.vspd;
+     alertType = global.ENEMY_BEETLE 
+     dir = -1;
+     image_xscale = other.image_xscale;
+     image_yscale = -1;
+     depth = -1000;
+     hspd = other.hspd;
+     vspd = other.vspd;
  }
  instance_destroy();
 }

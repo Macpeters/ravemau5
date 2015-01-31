@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shooting_speed = 1;
+            <string>///Setup shooting speed and power
+shooting_speed = 1;
 multiplier = 50;
 shooting_clock = 0;
 pwr = 10;
@@ -51,7 +52,8 @@ pwr = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shooting_clock += 1;
+            <string>///Shoot if ready, otherwise advance clock
+shooting_clock += 1;
 if(shooting_clock == shooting_speed * multiplier){
     bullet = instance_create(x, y, par_projectile);
     bullet.hspd = lengthdir_x(1, image_angle-90)*pwr;

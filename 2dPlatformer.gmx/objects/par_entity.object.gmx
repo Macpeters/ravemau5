@@ -98,13 +98,30 @@ vspd += g * multiG;
 multiG = 1;
 
 //vertical movement
+/*
 for(i=0; i &lt; abs(vspd); i += 1){
     if(place_meeting(x, y+sign(vspd), par_solid)){
         vspd = 0;                                         
-    } else if(place_meeting(x, y+sign(vspd), par_jumpthrough) &amp;&amp; vspd &gt; 0){
+    } else if(place_meeting(x, y+sign(vspd), par_jumpthrough) &amp;&amp; vspd &gt; 0){  
         vspd = 0;
     }else {
         y += sign(vspd);
+    }
+}*/
+
+for(i=0; i &lt; abs(vspd); i += 1){
+    if(place_meeting(x, y+sign(vspd), par_solid)){
+        vspd = 0;                                         
+    } 
+    else {
+         //TODO: get the height of the sprite/2
+         bottomY = y + 16;
+         instance = instance_position(x, bottomY+sign(vspd), par_jumpthrough);
+         if(instance &amp;&amp; vspd &gt; 0){
+             vspd = 0;         
+         }else{
+               y += sign(vspd);
+         }
     }
 }
 
@@ -138,8 +155,7 @@ if(place_meeting(x, y+1, par_solid) || place_meeting(x, y+1, par_jumpthrough)){
             <kind>1</kind>
             <string>///Check stats
 if(hp &lt;= 0){
-    instance_create(x, y, par_alert);
-    instance_destroy();
+      instance_destroy();
 }
 </string>
           </argument>
