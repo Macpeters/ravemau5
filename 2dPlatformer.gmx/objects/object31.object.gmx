@@ -25,21 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw all the player choices, and the button back to level select
-//back to level selection
-button = instance_create(20, 20, obj_level_select_button);
-button.buttonWorld = global.BUTTON_PLAY;
+            <string>///Create world buttons, shoppe button
+num_levels = global.NUM_WORLDS;
 
-num_player_choices = global.NUM_PLAYER_CHOICES;
-//num_player_choices = 4
-for(i=0; i&lt;num_player_choices; i++){
-    button = instance_create(20 + i * 100, 200, obj_player_select_button);
-    button.playerChoice = i;
-    get_player_btn_sprite(button);
+for(i=1; i&lt;num_levels; i++){
+         if(i &gt; global.worldsUnlocked){
+              button = instance_create(50 + (i*100), 100, obj_unlock_world);
+              button.cost = i; //* 5;
+         }else{
+              button = instance_create(50 + (i*100), 100, obj_level_select_button);
+         }
+         button.buttonWorld = i;
 }
 
-
-
+button = instance_create(20, 350, obj_level_select_button);
+button.buttonWorld = global.BUTTON_SHOPPE;    
 </string>
           </argument>
         </arguments>
@@ -62,36 +62,11 @@ for(i=0; i&lt;num_player_choices; i++){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw the chosen player, available glowrings
+            <string>///Draw available glowrings
 draw_set_font(fon_hud);
 draw_set_color(c_white);
-draw_text(380, 20, "Store");
-
-playerChoice = global.playerChoice;
-{ switch (playerChoice) {
-    case global.SHUTTER_SHADE:
-    playerSprite = spr_btn_shutter_shade;
-    break;
-   case global.PINK_FUNFUR:
-    playerSprite = spr_btn_pink_funfur;
-    break;
-   case global.BLUE_FUNFUR:
-    playerSprite = spr_btn_blue_funfur;
-    break;
-   case global.SKRILLIX:
-    playerSprite = spr_btn_skrillix;
-    break;
-   default:
-    playerSprite = spr_btn_basic;
-   }
-}
-//player area
-draw_sprite_ext( spr_hud, 0, 0, 350, 1, 4, 0, c_white, 1 );
-draw_text(0, 368, "Your Player:");
-draw_sprite(playerSprite, 0, 50, 410);
-//stats
-draw_sprite(spr_glow_ring, 0, 200, 410);
-draw_text(250,410,global.glowRings)
+draw_sprite(spr_glow_ring, 0, 400, 410);
+draw_text(450,410,global.glowRings)
 </string>
           </argument>
         </arguments>
@@ -109,8 +84,5 @@ draw_text(250,410,global.glowRings)
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>32,32</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>
