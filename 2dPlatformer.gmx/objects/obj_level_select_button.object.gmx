@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Setup
 self.buttonWorld = 1;
+self.bottonLevel = 1;
 </string>
           </argument>
         </arguments>
@@ -50,9 +51,11 @@ self.buttonWorld = 1;
           <argument>
             <kind>1</kind>
             <string>///Enter the level
-/*
-global.level = self.buttonWorld;
-{ switch (level) {
+//keep track of which level was chosen
+global.level = buttonLevel;
+world = global.world;
+//create the level name using the world name and level number
+{ switch (world) {
    case global.WORLD_ICE:
     world_name = "roo_ice_";
     break;
@@ -69,9 +72,11 @@ global.level = self.buttonWorld;
     world_name = "roo_sewer_";
     break;
    }
+   level = string(buttonLevel);
    level_name = world_name + level;
+   //go to the level by that name
    room_goto(asset_get_index(level_name));
-}*/
+}
 </string>
           </argument>
         </arguments>
@@ -95,7 +100,12 @@ global.level = self.buttonWorld;
           <argument>
             <kind>1</kind>
             <string>///Draw the right sprite for this world
-switch (self.buttonWorld) {
+draw_set_font(fon_hud);
+draw_set_color(c_black);
+draw_text(360, 20, "Level Select");
+world = global.world;
+
+switch (buttonWorld) {
    case global.BUTTON_SHOPPE:
     sprite = spr_button_shoppe;
    break;
@@ -117,8 +127,8 @@ switch (self.buttonWorld) {
    default:
     sprite = spr_solid_square;
    }
-draw_sprite_ext( spr_btn_play, 1, x, y, 1.5, 1.5, 0, c_white, 1 );
-//draw_sprite_ext( sprite, 1, x, y, 1.5, 1.5, 0, c_white, 1 );
+draw_sprite_ext( sprite, 1, x, y, 1.5, 1.5, 0, c_white, 1 );
+draw_text(x-15, y+5, buttonLevel);
 </string>
           </argument>
         </arguments>

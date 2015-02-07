@@ -30,15 +30,16 @@ num_levels = global.NUM_WORLDS;
 
 for(i=1; i&lt;num_levels; i++){
          if(i &gt; global.worldsUnlocked){
-              button = instance_create(50 + (i*100), 100, obj_unlock_world);
-              button.cost = i; //5;
+              button = instance_create(50 + (i*100), 150, obj_unlock_world);
+              button.cost = i;
          }else{
-              button = instance_create(50 + (i*100), 100, obj_world_select_button);
+              button = instance_create(45 + (i*100), 105, obj_world_select_button);
          }
          button.buttonWorld = i;
+         button.buttonLevel = 4;
 }
 
-button = instance_create(20, 350, obj_world_select_button);
+button = instance_create(100, 400, obj_world_select_button);
 button.buttonWorld = global.BUTTON_SHOPPE;    
 </string>
           </argument>

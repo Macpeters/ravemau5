@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0, 0, obj_exit_level_button);
+            <string>instance_create(32, 32, obj_exit_level_button);
 </string>
           </argument>
         </arguments>

@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Setup
-self.buttonWorld = 1;
+self.buttonLevel = 1;
 spawnX = x;
 spawnY = y;
 </string>
@@ -51,29 +51,27 @@ spawnY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Enter the world
-global.world = self.buttonWorld;
+            <string>///Go to level select, store, or back
 { switch (buttonWorld) {
    case global.BUTTON_SHOPPE:
-    room_goto(roo_store);
-    break;
+        room_goto(roo_store);
+        break;
+   case global.BUTTON_PLAY:
+        room_goto(roo_world_select);
+        break;
    case global.WORLD_ICE:
-    room_goto(roo_ice_1);
-    break;
    case global.WORLD_SEWER:
-    room_goto(roo_sewer_1);
-    break;
    case global.WORLD_PARLOUR:
-    room_goto(roo_parlour_1);
-    break;
    case global.WORLD_DISCO: 
-    room_goto(roo_disco_1);
+        global.world = buttonWorld;
+        room_goto(roo_level_select);
     break;
    default:
-    room_goto(roo_world_select);
-    break;
+           room_goto(roo_world_select);
+           break;
    }
 }
+
 </string>
           </argument>
         </arguments>
@@ -121,6 +119,7 @@ switch (self.buttonWorld) {
    }
 
 draw_sprite_ext( sprite, 1, x, y, 1.5, 1.5, 0, c_white, 1 );
+
 </string>
           </argument>
         </arguments>

@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(roo_world_select);
+            <string>room_goto(roo_level_select);
 </string>
           </argument>
         </arguments>

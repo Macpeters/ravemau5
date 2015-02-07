@@ -4,7 +4,7 @@ global.WORLD_PARLOUR = 2;
 global.WORLD_ICE = 3;
 global.WORLD_DISCO = 4;
 global.NUM_WORLDS = 5;
-global.NUM_LEVELS = 5;
+global.NUM_LEVELS = 3;
 //buttons
 global.LEVEL_SELECTION = 100;
 global.BUTTON_PLAY = 101;

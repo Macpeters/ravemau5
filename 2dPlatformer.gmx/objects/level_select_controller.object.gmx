@@ -26,16 +26,20 @@
           <argument>
             <kind>1</kind>
             <string>///Create world buttons, shoppe button
-num_levels = global.NUM_levels;
+num_levels = global.NUM_LEVELS;
+
+button = instance_create(80, 80, obj_world_select_button);
+button.buttonWorld = global.BUTTON_PLAY; 
 
 for(i=1; i&lt;num_levels; i++){
-  if(i &gt; global.levelUnlocked){
-  button = instance_create(50 + (i*100), 100, obj_unlock_world);
-         button.cost = i * 10;
-  }else{
-        button = instance_create(50 + (i*100), 100, obj_level_select_button);
-  }
-  button.buttonWorld = i;
+  //if(i &gt; global.levelsUnlocked){
+ // button = instance_create(50 + (i*100), 100, obj_unlock_world);
+ //        button.cost = i * 10;
+ // }else{
+        button = instance_create(100 + (i*100), 150, obj_level_select_button);
+//  }
+  button.buttonWorld = global.world;
+  button.buttonLevel = i;
 }    
 </string>
           </argument>

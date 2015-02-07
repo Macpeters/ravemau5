@@ -202,11 +202,20 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\roo_world_select</room>
+    <room>rooms\roo_level_select</room>
     <room>rooms\roo_store</room>
     <room>rooms\roo_sewer_1</room>
+    <room>rooms\roo_sewer_2</room>
+    <room>rooms\roo_sewer_3</room>
     <room>rooms\roo_parlour_1</room>
+    <room>rooms\roo_parlour_2</room>
+    <room>rooms\roo_parlour_3</room>
     <room>rooms\roo_ice_1</room>
+    <room>rooms\roo_ice_2</room>
+    <room>rooms\roo_ice_3</room>
     <room>rooms\roo_disco_1</room>
+    <room>rooms\roo_disco_2</room>
+    <room>rooms\roo_disco_3</room>
   </rooms>
   <constants number="6">
     <constant name="TR_NONE">-1</constant>
