@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.buttonWorld = 1;
-spawnX = x;
-spawnY = y;
+            <string>///Setup
+self.buttonWorld = 1;
+self.bottonLevel = 1;
 </string>
           </argument>
         </arguments>
@@ -50,27 +50,32 @@ spawnY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.world = self.buttonWorld;
-{ switch (buttonWorld) {
-   case global.BUTTON_SHOPPE:
-    room_goto(roo_store);
-    break;
+            <string>///Enter the level
+//keep track of which level was chosen
+global.level = buttonLevel;
+world = global.world;
+//create the level name using the world name and level number
+{ switch (world) {
    case global.WORLD_ICE:
-    room_goto(roo_ice01);
+    world_name = "roo_ice_";
     break;
    case global.WORLD_SEWER:
-    room_goto(roo_sewer01);
+    world_name = "roo_sewer_";
     break;
    case global.WORLD_PARLOUR:
-    room_goto(roo_parlour01);
+     world_name = "roo_parlour_";
     break;
    case global.WORLD_DISCO: 
-    room_goto(roo_disco01);
+    world_name = "roo_disco_";
     break;
    default:
-    room_goto(roo_level_select);
+    world_name = "roo_sewer_";
     break;
    }
+   level = string(buttonLevel);
+   level_name = world_name + level;
+   //go to the level by that name
+   room_goto(asset_get_index(level_name));
 }
 </string>
           </argument>
@@ -94,8 +99,13 @@ spawnY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-switch (self.buttonWorld) {
+            <string>///Draw the right sprite for this world
+draw_set_font(fon_hud);
+draw_set_color(c_black);
+draw_text(360, 20, "Level Select");
+world = global.world;
+
+switch (buttonWorld) {
    case global.BUTTON_SHOPPE:
     sprite = spr_button_shoppe;
    break;
@@ -117,11 +127,8 @@ switch (self.buttonWorld) {
    default:
     sprite = spr_solid_square;
    }
-
-draw_sprite(sprite, 0, x, y);
-/*if(global.worldsCompleted &lt; buttonWorld){
-    draw_sprite(spr_player, 0, x, y);
-}*/
+draw_sprite_ext( sprite, 1, x, y, 1.5, 1.5, 0, c_white, 1 );
+draw_text(x-15, y+5, buttonLevel);
 </string>
           </argument>
         </arguments>

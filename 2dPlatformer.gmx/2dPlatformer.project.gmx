@@ -89,6 +89,7 @@
         <sprite>sprites\spr_js_base</sprite>
         <sprite>sprites\spr_js_stick</sprite>
       </sprites>
+      <sprite>sprites\spr_unlock_world</sprite>
     </sprites>
     <sprites name="Alerts">
       <sprite>sprites\spr_health_alert</sprite>
@@ -142,6 +143,8 @@
       <script>scripts\get_player_btn_sprite.gml</script>
       <script>scripts\get_alert_sprite.gml</script>
     </scripts>
+    <script>scripts\loadSaveFile.gml</script>
+    <script>scripts\saveFile.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fon_hud</font>
@@ -149,6 +152,7 @@
   <objects name="objects">
     <object>objects\obj_global_controller</object>
     <object>objects\obj_game_controller</object>
+    <object>objects\world_select_controller</object>
     <object>objects\level_select_controller</object>
     <object>objects\obj_store_controller</object>
     <objects name="In-Game">
@@ -185,6 +189,7 @@
       <object>objects\obj_hud</object>
     </objects>
     <objects name="Buttons">
+      <object>objects\obj_world_select_button</object>
       <object>objects\obj_level_select_button</object>
       <object>objects\obj_player_select_button</object>
       <object>objects\obj_exit_level_button</object>
@@ -192,15 +197,25 @@
         <object>objects\obj_js_base</object>
         <object>objects\obj_js_stick</object>
       </objects>
+      <object>objects\obj_unlock_world</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\roo_world_select</room>
     <room>rooms\roo_level_select</room>
     <room>rooms\roo_store</room>
-    <room>rooms\roo_sewer01</room>
-    <room>rooms\roo_parlour01</room>
-    <room>rooms\roo_ice01</room>
-    <room>rooms\roo_disco01</room>
+    <room>rooms\roo_sewer_1</room>
+    <room>rooms\roo_sewer_2</room>
+    <room>rooms\roo_sewer_3</room>
+    <room>rooms\roo_parlour_1</room>
+    <room>rooms\roo_parlour_2</room>
+    <room>rooms\roo_parlour_3</room>
+    <room>rooms\roo_ice_1</room>
+    <room>rooms\roo_ice_2</room>
+    <room>rooms\roo_ice_3</room>
+    <room>rooms\roo_disco_1</room>
+    <room>rooms\roo_disco_2</room>
+    <room>rooms\roo_disco_3</room>
   </rooms>
   <constants number="6">
     <constant name="TR_NONE">-1</constant>

@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.playerChoice = 3;
-spawnX = x;
-spawnY = y;
+            <string>///Setup
+self.playerChoice = 3;
 </string>
           </argument>
         </arguments>
@@ -50,7 +49,8 @@ spawnY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.playerChoice = self.playerChoice;
+            <string>///Choose the player represented by this button
+global.playerChoice = self.playerChoice;
 </string>
           </argument>
         </arguments>
@@ -73,23 +73,7 @@ spawnY = y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-switch (playerChoice) {
-    case global.SHUTTER_SHADE:
-    sprite = spr_btn_shutter_shade;
-    break;
-   case global.PINK_FUNFUR:
-    sprite = spr_btn_pink_funfur;
-   break;   
-   case global.BLUE_FUNFUR:
-    sprite = spr_btn_blue_funfur;
-   break;
-   case global.SKRILLIX:
-    sprite = spr_btn_skrillix_player;
-   break;
-   default:
-    sprite = spr_btn_basic_player;
-   }*/
+            <string>///Draw the player sprite
 draw_sprite(sprite, 0, x, y);
 </string>
           </argument>

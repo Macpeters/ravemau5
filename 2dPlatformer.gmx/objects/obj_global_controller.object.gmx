@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Setup
+            <string>/// C:Users/Mac/AppData/local/2dPlatformer
+///Setup keybindings, default vars, load save file
 global.playerChoice = 0;
 //Key Bindings
 globalvar kUp, kDown, kLeft, kRight, kJump, kAction;
@@ -37,7 +38,6 @@ global.upMove = false;
 global.downMove = false;
 global.rightMove = false;
 global.leftMove = false;
-
 setConstants();
 
 kRight = vk_right;
@@ -45,12 +45,14 @@ kJump = vk_space;
 kAction = ord("X");
 
 global.world = 0;
+global.level = 0;
+global.worldsUnlocked = 1;
+global.levelsUnlocked = 1;
 
-//Scoring
-global.glowRings = 0;
-global.points = 0;
-global.beetlesKilled = 0;
+loadSaveFile();
 global.hp = 0;
+
+
 
 </string>
           </argument>
