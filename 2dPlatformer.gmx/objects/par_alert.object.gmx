@@ -29,6 +29,9 @@
 sprite_alpha = 1;
 alertType = 100;
 dir = 1;
+
+sparkle = instance_create(x, y, obj_sparkle);
+sparkleExists = true;
 </string>
           </argument>
         </arguments>
@@ -51,10 +54,17 @@ dir = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///If death, restart room
+            <string>///Destroy any remaining particle, if death, restart room
+if(sparkleExists){
+  with(sparkle){
+    instance_destroy();
+  }
+}
+
 if(alertType == global.DEATH){
     room_restart();
 }
+
 </string>
           </argument>
         </arguments>
@@ -82,6 +92,15 @@ self.y -= dir;
 sprite_alpha -= 0.01;
 if(sprite_alpha &lt;= 0){
    instance_destroy();
+}
+
+if(sparkleExists){
+  if(alertType &gt; global.COLLECTABLES){
+   with(sparkle){
+     instance_destroy();
+   }
+   sparkleExists = false;
+  }
 }
 </string>
           </argument>

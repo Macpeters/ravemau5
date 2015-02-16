@@ -17,10 +17,12 @@ global.BLUE_FUNFUR = 3;
 global.SKRILLIX = 4;
 global.NUM_PLAYER_CHOICES = 5;
 //alerts
-global.HEALTH = 1;
-global.SICK = 2;
-global.DEATH = 3;
-global.GLOWRING = 4
-global.CHEESE = 5;
-global.ENEMY_BEETLE = 6;
+
+global.CHEESE = 1;
+global.GLOWRING = 2;
+global.COLLECTABLES = 3;
+global.SICK = 4;
+global.DEATH = 5;
+global.HEALTH = 6;
+global.ENEMY_BEETLE = 7;
 

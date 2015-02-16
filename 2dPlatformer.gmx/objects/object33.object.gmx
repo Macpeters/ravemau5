@@ -25,49 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Create world buttons, shoppe button
-num_levels = global.NUM_LEVELS;
-
-button = instance_create(80, 80, obj_world_select_button);
-button.buttonWorld = global.BUTTON_PLAY; 
-
-for(i=1; i &lt;= num_levels; i++){
-  //if(i &gt; global.levelsUnlocked){
- // button = instance_create(50 + (i*100), 100, obj_unlock_world);
- //        button.cost = i * 10;
- // }else{
-        button = instance_create(100 + (i*100), 150, obj_level_select_button);
-//  }
-  button.buttonWorld = global.world;
-  button.buttonLevel = i;
-}    
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw available glowrings
-draw_set_font(fon_hud);
-draw_set_color(c_white);
-draw_sprite(spr_glow_ring, 0, 400, 410);
-draw_text(450,410,global.glowRings)
+            <string>FirstParticleSystem = part_system_create();
+first_particle = part_type_create();
+part_type_shape(first_particle,pt_shape_square);
 </string>
           </argument>
         </arguments>

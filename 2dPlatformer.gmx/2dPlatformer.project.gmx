@@ -48,20 +48,20 @@
     </sprites>
     <sprites name="Solids">
       <sprite>sprites\spr_solid_square</sprite>
-      <sprite>sprites\spr_solid_blue</sprite>
-      <sprite>sprites\spr_solid_orange</sprite>
-      <sprite>sprites\spr_solid_yellow</sprite>
-      <sprite>sprites\spr_solid_pink</sprite>
+      <sprite>sprites\spr_solid_ice</sprite>
+      <sprite>sprites\spr_solid_sewer</sprite>
+      <sprite>sprites\spr_solid_parlour</sprite>
+      <sprite>sprites\spr_solid_disco</sprite>
     </sprites>
     <sprites name="Hazards">
       <sprite>sprites\spr_hazard_square</sprite>
       <sprite>sprites\spr_sewer_water</sprite>
     </sprites>
     <sprites name="JumpThroughs">
-      <sprite>sprites\spr_jumpthrough_purple</sprite>
-      <sprite>sprites\spr_jumpthrough_pink</sprite>
-      <sprite>sprites\spr_jumpthrough_green</sprite>
-      <sprite>sprites\spr_jumpthrough_blue</sprite>
+      <sprite>sprites\spr_jumpthrough_ice</sprite>
+      <sprite>sprites\spr_jumpthrough_sewer</sprite>
+      <sprite>sprites\spr_jumpthrough_parlour</sprite>
+      <sprite>sprites\spr_jumpthrough_disco</sprite>
     </sprites>
     <sprites name="Collectables">
       <sprite>sprites\spr_glow_ring</sprite>
@@ -187,6 +187,9 @@
         <object>objects\obj_glow_ring</object>
       </objects>
       <object>objects\obj_hud</object>
+      <objects name="Particles">
+        <object>objects\obj_sparkle</object>
+      </objects>
     </objects>
     <objects name="Buttons">
       <object>objects\obj_world_select_button</object>
