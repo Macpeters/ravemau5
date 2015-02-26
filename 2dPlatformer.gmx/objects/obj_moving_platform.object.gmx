@@ -152,7 +152,7 @@ ds_list_clear(onMeList);
           <argument>
             <kind>1</kind>
             <string>///React
-if other.trRefID == 70 {
+if other.trRefID == global.TR_INVISIBLE_WALL {
  hspd *= -1;
  vspd *= -1;
 }

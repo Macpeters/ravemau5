@@ -17,10 +17,20 @@ global.BLUE_FUNFUR = 3;
 global.SKRILLIX = 4;
 global.NUM_PLAYER_CHOICES = 5;
 //alerts
-global.HEALTH = 1;
-global.SICK = 2;
-global.DEATH = 3;
-global.GLOWRING = 4
-global.CHEESE = 5;
-global.ENEMY_BEETLE = 6;
+global.CHEESE = 1;
+global.GLOWRING = 2;
+global.COLLECTABLES = 3;
+global.SICK = 4;
+global.DEATH = 5;
+global.HEALTH = 6;
+global.ENEMY_BEETLE = 7;
+//triggers
+global.TR_NONE = -1;
+global.TR_VIEW_SIZE = 0;
+global.TR_VIEW_OBJECT = 1;
+global.TR_VIEW_POINT = 2;
+global.TR_INSTANCE_CREATE = 3;
+global.TR_INSTANCE_DESTROY = 4;
+global.TR_INVISIBLE_WALL = 5;
+global.TR_TURNBACK = 6;
 

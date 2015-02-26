@@ -13,6 +13,7 @@
   <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
+  <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
     <w>0</w>
@@ -220,7 +221,6 @@
     <instance objName="par_solid" x="384" y="128" name="inst_885E34CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="416" y="128" name="inst_39B739F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="448" y="128" name="inst_9EFEBBC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="320" y="256" name="inst_D77C4EEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="320" y="288" name="inst_D6AB419C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="288" y="288" name="inst_F6FD6AA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="256" y="288" name="inst_FF7A513C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -231,42 +231,14 @@
     <instance objName="par_solid" x="96" y="288" name="inst_36297A83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="64" y="288" name="inst_04BB69BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="32" y="288" name="inst_8A750131" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="32" y="416" name="inst_1E0AFFF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="32" y="384" name="inst_CEA45364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="64" y="384" name="inst_03A25B60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="64" y="416" name="inst_7A8F46FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="96" y="416" name="inst_BEDF5B50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="96" y="384" name="inst_30B917C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="128" y="384" name="inst_D4438E0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="128" y="416" name="inst_A998404B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="160" y="416" name="inst_A58B4229" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="160" y="384" name="inst_C0B37C14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="224" y="384" name="inst_286E0197" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="192" y="416" name="inst_63C9712C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="192" y="384" name="inst_69A5A6D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="224" y="416" name="inst_40D5B25B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="256" y="416" name="inst_974C60F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="288" y="416" name="inst_02257735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="320" y="416" name="inst_F02FAFAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="352" y="416" name="inst_E54E28D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="384" y="416" name="inst_D26EB47D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="416" y="416" name="inst_E53B0309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="448" y="416" name="inst_37D35FEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="480" y="416" name="inst_CB6187A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="512" y="416" name="inst_084D207E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="544" y="416" name="inst_C1339CF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="576" y="416" name="inst_49E2459E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="608" y="416" name="inst_67895773" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="448" y="320" name="inst_AB0DB903" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="480" y="320" name="inst_B9639502" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="512" y="320" name="inst_23E1DD3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="544" y="320" name="inst_EDA00AF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="576" y="320" name="inst_AF0C24D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="608" y="320" name="inst_4E4FB138" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="par_solid" x="544" y="288" name="inst_EDA00AF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="par_solid" x="544" y="320" name="inst_AF0C24D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="608" y="288" name="inst_704EEDD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="640" y="288" name="inst_AB054D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="640" y="320" name="inst_6C0A2EDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="672" y="320" name="inst_244D13BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="672" y="288" name="inst_50D90D7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="576" y="288" name="inst_F1FE5660" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="608" y="256" name="inst_2795E834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -274,7 +246,6 @@
     <instance objName="par_solid" x="672" y="256" name="inst_105E72C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="704" y="256" name="inst_9C45D2E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="704" y="288" name="inst_E73D52B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="704" y="320" name="inst_E18ECE4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="736" y="160" name="inst_7517C89F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="768" y="160" name="inst_69A219F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="800" y="160" name="inst_B0D5D78C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -306,9 +277,6 @@
     <instance objName="par_solid" x="1216" y="224" name="inst_EF27A785" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="1216" y="192" name="inst_527431B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="1216" y="160" name="inst_F452287A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="1216" y="384" name="inst_5ACBCB6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="1216" y="416" name="inst_EAD808F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_solid" x="1248" y="416" name="inst_AD3E0B45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="1824" y="160" name="inst_76427340" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cheese" x="1952" y="416" name="inst_7BA26CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cheese" x="32" y="256" name="inst_30B6069B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -350,6 +318,14 @@
     <instance objName="par_weapon" x="1056" y="32" name="inst_DA035123" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_weapon" x="1600" y="32" name="inst_AA3EE47B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_slime" x="288" y="96" name="inst_EF25013D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_beetle" x="1120" y="416" name="inst_31004EA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_beetle" x="1440" y="416" name="inst_95DC38D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_beetle" x="224" y="384" name="inst_920828A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_beetle" x="96" y="416" name="inst_D180FA5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="par_solid" x="416" y="352" name="inst_A69B7DC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="par_solid" x="448" y="352" name="inst_6775D048" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger" x="320" y="224" name="inst_7425ECA1" locked="0" code="trType = global.TR_INVISIBLE_WALL;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger" x="1248" y="416" name="inst_CA048D93" locked="0" code="trType = global.TR_INVISIBLE_WALL;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

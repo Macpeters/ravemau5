@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_trigger_square</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>-120</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,14 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Setup
-trType = TR_NONE;
+            <string>/////Default values can be changed in the room via creation code
+trType = global.TR_NONE;
 trObject = par_player;
 trOnce = false;
 trRefID = -1;
 
-
-//These values can be changed by adding the object to a room and editing the creation code
 </string>
           </argument>
         </arguments>
@@ -58,26 +56,26 @@ trRefID = -1;
             <string>///Execute
 if (place_meeting(x,y,trObject)) {
  //Changing view size (arg0 = new view width, arg1 = new view height) 
- if (trType == TR_VIEW_SIZE) {
+ if (trType == global.TR_VIEW_SIZE) {
   gvW = arg0;
   gvH = arg1;
  }
  //Changing view object (arg0 = new view object to follow)
- if (trType == TR_VIEW_OBJECT) {
+ if (trType == global.TR_VIEW_OBJECT) {
   gvObj = arg0;
  }
  //Changing view fixate point (arg0 = new view x, arg1 = new view y)
- if (trType == TR_VIEW_POINT) {
+ if (trType == global.TR_VIEW_POINT) {
   gvObj = -1;
   gvX = arg0-gvW/2;
   gvY = arg1-gvH/2;
  }
  //Create a new instance (arg0 = new instance x, arg1 = new instance y, arg2 = new instance type)
- if (trType == TR_INSTANCE_CREATE) {
+ if (trType == global.TR_INSTANCE_CREATE) {
   instance_create(arg0,arg1,arg2);
  }
  //Destroy an instance/object (arg0 = instance)
- if (trType == TR_INSTANCE_DESTROY) {
+ if (trType == global.TR_INSTANCE_DESTROY) {
   with(arg0) {
    instance_destroy();
   }
