@@ -54,7 +54,7 @@ cost = 0;
 if(self.buttonWorld == next_world &amp;&amp; global.glowRings &gt;= cost){
   global.glowRings -= cost;
   global.worldsUnlocked += 1;
-  button = instance_create(x-5, y-45, obj_world_select_button);
+  button = instance_create(x-5, y-45, obj_global_button);
   button.buttonWorld = self.buttonWorld;
   instance_destroy();
 }

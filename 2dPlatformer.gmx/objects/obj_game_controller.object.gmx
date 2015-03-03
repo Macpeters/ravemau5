@@ -226,6 +226,11 @@ if instance_exists(gvObj) {
             <kind>1</kind>
             <string>///save the file
 saveFile();
+if(instance_exists(obj_sparkle)){
+    with(obj_sparke){
+        instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>

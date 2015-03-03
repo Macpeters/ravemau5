@@ -9,6 +9,9 @@ global.NUM_LEVELS = 3;
 global.LEVEL_SELECTION = 100;
 global.BUTTON_PLAY = 101;
 global.BUTTON_SHOPPE = 102;
+global.BUTTON_SETTINGS = 103;
+global.BUTTON_SFX = 104;
+global.BUTTON_MUSIC = 105;
 //players
 global.BASIC_PLAYER = 0;
 global.SHUTTER_SHADE = 1;
@@ -33,4 +36,3 @@ global.TR_INSTANCE_CREATE = 3;
 global.TR_INSTANCE_DESTROY = 4;
 global.TR_INVISIBLE_WALL = 5;
 global.TR_TURNBACK = 6;
-

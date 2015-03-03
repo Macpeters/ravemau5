@@ -34,6 +34,7 @@ curAttack = 0;
 hurtClock = 0;
 
 get_player_sprite(self);
+image_speed = 0.1;
 </string>
           </argument>
         </arguments>

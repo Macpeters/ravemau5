@@ -13,4 +13,6 @@ if file_exists("ravemow5_save.ini"){
       global.glowRings = 0;
       global.points = 0;
       global.beetlesKilled = 0;
+      global.worldsUnlocked = 1;
+      global.levelsUnlocked = 1;
 }

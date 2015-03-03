@@ -87,7 +87,7 @@ draw_text(580, 0, "/10");
           <argument>
             <kind>1</kind>
             <string>///do not draw the icon
-draw_sprite(image_index, 0, x, y);
+///draw_sprite(image_index, 0, x, y);
 </string>
           </argument>
         </arguments>

@@ -8,6 +8,9 @@
     <sound>sound\aud_collectable</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="cutscenes">
+      <sprite>sprites\spr_sewer_cutscene</sprite>
+    </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_mask</sprite>
       <sprites name="basic">
@@ -101,6 +104,10 @@
         <sprite>sprites\storeIcon</sprite>
         <sprite>sprites\worldIcon</sprite>
       </sprites>
+      <sprite>sprites\spr_btn_settings</sprite>
+      <sprite>sprites\spr_btn_music</sprite>
+      <sprite>sprites\spr_btn_sfx</sprite>
+      <sprite>sprites\spr_btn_toggle</sprite>
     </sprites>
     <sprites name="Alerts">
       <sprite>sprites\spr_health_alert</sprite>
@@ -150,6 +157,8 @@
     <script>scripts\setConstants.gml</script>
     <scripts name="get_sprites">
       <script>scripts\get_solid_sprite.gml</script>
+      <script>scripts\get_global_btn_sprite.gml</script>
+      <script>scripts\get_cutscene_sprite.gml</script>
       <script>scripts\get_jumpthrough_sprite.gml</script>
       <script>scripts\get_player_sprite.gml</script>
       <script>scripts\get_player_btn_sprite.gml</script>
@@ -167,6 +176,8 @@
     <object>objects\world_select_controller</object>
     <object>objects\level_select_controller</object>
     <object>objects\obj_store_controller</object>
+    <object>objects\obj_cutscene_controller</object>
+    <object>objects\obj_settings_controller</object>
     <objects name="In-Game">
       <objects name="Parents">
         <object>objects\par_alert</object>
@@ -204,7 +215,7 @@
       </objects>
     </objects>
     <objects name="Buttons">
-      <object>objects\obj_world_select_button</object>
+      <object>objects\obj_global_button</object>
       <object>objects\obj_level_select_button</object>
       <object>objects\obj_player_select_button</object>
       <object>objects\obj_exit_level_button</object>
@@ -218,19 +229,29 @@
   <rooms name="rooms">
     <room>rooms\roo_world_select</room>
     <room>rooms\roo_level_select</room>
+    <room>rooms\roo_cutscene</room>
+    <room>rooms\roo_settings</room>
     <room>rooms\roo_store</room>
-    <room>rooms\roo_sewer_1</room>
-    <room>rooms\roo_sewer_2</room>
-    <room>rooms\roo_sewer_3</room>
-    <room>rooms\roo_parlour_1</room>
-    <room>rooms\roo_parlour_2</room>
-    <room>rooms\roo_parlour_3</room>
-    <room>rooms\roo_ice_1</room>
-    <room>rooms\roo_ice_2</room>
-    <room>rooms\roo_ice_3</room>
-    <room>rooms\roo_disco_1</room>
-    <room>rooms\roo_disco_2</room>
-    <room>rooms\roo_disco_3</room>
+    <rooms name="sewer">
+      <room>rooms\roo_sewer_1</room>
+      <room>rooms\roo_sewer_2</room>
+      <room>rooms\roo_sewer_3</room>
+    </rooms>
+    <rooms name="parlour">
+      <room>rooms\roo_parlour_1</room>
+      <room>rooms\roo_parlour_2</room>
+      <room>rooms\roo_parlour_3</room>
+    </rooms>
+    <rooms name="ice">
+      <room>rooms\roo_ice_1</room>
+      <room>rooms\roo_ice_2</room>
+      <room>rooms\roo_ice_3</room>
+    </rooms>
+    <rooms name="disco">
+      <room>rooms\roo_disco_1</room>
+      <room>rooms\roo_disco_2</room>
+      <room>rooms\roo_disco_3</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

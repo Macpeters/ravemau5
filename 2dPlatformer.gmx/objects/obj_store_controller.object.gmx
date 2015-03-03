@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Draw all the player choices, and the button back to level select
 //back to level selection
-button = instance_create(80, 80, obj_world_select_button);
+button = instance_create(80, 80, obj_global_button);
 button.buttonWorld = global.BUTTON_PLAY;
 
 num_player_choices = global.NUM_PLAYER_CHOICES;
