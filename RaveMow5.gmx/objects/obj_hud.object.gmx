@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_hud, 0, 0, 0);
+            <string>///draw overlay, number glowrings, points and hp
+draw_sprite(spr_hud, 0, 0, 0);
 draw_set_font(fon_hud);
 draw_set_color(c_white);
 

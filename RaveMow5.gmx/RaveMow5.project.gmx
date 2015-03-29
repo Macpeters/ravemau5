@@ -110,7 +110,6 @@
       <sprite>sprites\spr_btn_settings</sprite>
       <sprite>sprites\spr_btn_music</sprite>
       <sprite>sprites\spr_btn_sfx</sprite>
-      <sprite>sprites\spr_btn_toggle</sprite>
     </sprites>
     <sprites name="Alerts">
       <sprite>sprites\spr_health_alert</sprite>

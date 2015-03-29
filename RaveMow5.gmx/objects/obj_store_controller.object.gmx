@@ -30,12 +30,16 @@
 button = instance_create(80, 80, obj_global_button);
 button.buttonWorld = global.BUTTON_PLAY;
 
-num_player_choices = global.NUM_PLAYER_CHOICES;
-//num_player_choices = 4
-for(i=0; i&lt;num_player_choices; i++){
-    button = instance_create(60 + i * 100, 200, obj_player_select_button);
-    button.playerChoice = i;
-    get_player_btn_sprite(button);
+for(i=0; i &lt; global.NUM_PLAYER_CHOICES; i++){
+    if(global.playersUnlocked[i]){
+        button = instance_create(65 + i * 120, 210, obj_player_select_button);
+        button.playerChoice = 200 + i;
+        get_player_btn_sprite(button);
+    }else{
+        button = instance_create(65 + (i*120), 250, obj_unlock_world);
+        button.cost = i;
+        button.buttonWorld = 200 + i;
+    }
 }
 
 
@@ -67,28 +71,12 @@ draw_set_font(fon_hud);
 draw_set_color(c_white);
 draw_text(380, 20, "Store");
 
-playerChoice = global.playerChoice;
-{ switch (playerChoice) {
-    case global.SHUTTER_SHADE:
-    playerSprite = spr_btn_shutter_shade;
-    break;
-   case global.PINK_FUNFUR:
-    playerSprite = spr_btn_pink_funfur;
-    break;
-   case global.BLUE_FUNFUR:
-    playerSprite = spr_btn_blue_funfur;
-    break;
-   case global.SKRILLIX:
-    playerSprite = spr_btn_skrillix;
-    break;
-   default:
-    playerSprite = spr_btn_basic;
-   }
-}
+get_global_btn_sprite(global.playerChoice);
+
 //player area
 draw_sprite_ext( spr_hud, 0, 0, 350, 1, 4, 0, c_white, 1 );
 draw_text(0, 368, "Your Player:");
-draw_sprite(playerSprite, 0, 280, 410);
+draw_sprite(sprite, 0, 280, 410);
 //stats
 draw_sprite(spr_glow_ring, 0, 400, 410);
 draw_text(450,410,global.glowRings)
