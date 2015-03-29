@@ -30,6 +30,23 @@ buttonType = argument[0];
    case global.WORLD_DISCO: 
     sprite = spr_lvl_disco;
     break;
+    //players
+   case global.BASIC_PLAYER:
+    sprite = spr_btn_basic;
+    break;
+   case global.SHUTTER_SHADE:
+    sprite = spr_btn_shutter_shade;
+    break;
+   case global.SKRILLIX:
+    sprite = spr_btn_skrillix;
+    break;
+   case global.PINK_FUNFUR:
+    sprite = spr_btn_pink_funfur;
+    break;
+   case global.BLUE_FUNFUR:
+    sprite = spr_btn_blue_funfur;
+    break;
+    //default
    default:
     sprite = spr_solid_square;
    }

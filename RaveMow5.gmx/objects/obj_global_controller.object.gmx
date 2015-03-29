@@ -46,14 +46,11 @@ kAction = ord("X");
 
 global.world = 0;
 global.level = 0;
-global.worldsUnlocked = 1;
-global.levelsUnlocked = 1;
 
 loadSaveFile();
 global.hp = 0;
 global.glowRings = 50000;
-
-
+global.playerChoice = global.BASIC_PLAYER;
 </string>
           </argument>
         </arguments>

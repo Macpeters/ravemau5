@@ -74,7 +74,9 @@ global.playerChoice = self.playerChoice;
           <argument>
             <kind>1</kind>
             <string>///Draw the player sprite
-draw_sprite(sprite, 0, x, y);
+//draw_sprite(sprite, 0, x, y);
+get_global_btn_sprite(self.playerChoice);
+draw_sprite_ext(sprite, 0, x, y, 1.5, 1.5, 0, c_white, 1 );
 </string>
           </argument>
         </arguments>

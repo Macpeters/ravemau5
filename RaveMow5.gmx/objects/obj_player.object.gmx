@@ -226,14 +226,22 @@ if(hp &lt;= 0){
           <argument>
             <kind>1</kind>
             <string>///Create alert, add points, play sound
-audio_play_sound(aud_collectable, 10, false);
-sound_fade(aud_collectable, 10, 10);
+
+//Audio
+if(global.sfx_on){
+    audio_play_sound(aud_collectable, 10, false);
+    //sound_fade(aud_collectable, 10, 10);
+}
+
+//Alert
 alert = instance_create(self.x, self.y, par_alert);
 alert.alertType = global.GLOWRING;
 
+//Increase stats
 global.points += 100;
 global.glowRings += 1;
 
+//Destroy glowring
 with(other){
     instance_destroy();
 }

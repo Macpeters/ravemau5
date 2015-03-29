@@ -29,6 +29,39 @@
 self.buttonLevel = 1;
 spawnX = x;
 spawnY = y;
+canToggle = true;
+toggleCount = 0;
+toggleMax = 20;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Count delay to avoid double clicks
+if((canToggle == false) &amp;&amp; (toggleCount &lt; toggleMax)){
+    toggleCount += 1;
+}else if(canToggle == false){
+    canToggle = true;
+    toggleCount = 0;
+}
+
 </string>
           </argument>
         </arguments>
@@ -63,9 +96,16 @@ spawnY = y;
         room_goto(roo_settings);
         break;
    case global.BUTTON_SFX:
-    //toggle button
+        if(canToggle){
+            global.sfx_on = !global.sfx_on;
+            canToggle = false;
+        }
+       break;
    case global.BUTTON_MUSIC:
-    //toggle button
+        if(canToggle){
+            global.music_on = !global.music_on;
+            canToggle = false;
+        }
         break;
    case global.WORLD_ICE:
    case global.WORLD_SEWER:
@@ -103,19 +143,31 @@ spawnY = y;
           <argument>
             <kind>1</kind>
             <string>///Draw the right sprite for this world
-get_global_btn_sprite(self.buttonWorld);
-draw_sprite_ext( sprite, 1, x, y, 1.5, 1.5, 0, c_white, 1 );
 
+//Get the sprite
+opacity = 1;
+get_global_btn_sprite(self.buttonWorld);
+
+//Toggle opacity depending on settings
 { switch (buttonType) {
    case global.BUTTON_SFX:
-    draw_sprite(spr_btn_toggle, 0, x, y);
+    if(!global.sfx_on){
+        opacity = 0.5;   
+    }
    break;
    case global.BUTTON_MUSIC:
-    draw_sprite(spr_btn_toggle, 0, x, y);
+    if(!global.music_on){
+        opacity = 0.5;   
+    }
    break;
    default:
    }
 }
+
+draw_sprite_ext( sprite, 1, x, y, 1.5, 1.5, 0, c_white, opacity );
+
+
+
 </string>
           </argument>
         </arguments>
