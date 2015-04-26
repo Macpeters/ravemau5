@@ -85,6 +85,11 @@ if((canToggle == false) &amp;&amp; (toggleCount &lt; toggleMax)){
           <argument>
             <kind>1</kind>
             <string>///Go to level select, store, or back
+//Audio
+if(global.sfx_on){
+    audio_play_sound(aud_button_click, 10, false);
+}
+
 { switch (buttonWorld) {
    case global.BUTTON_SHOPPE:
         room_goto(roo_store);

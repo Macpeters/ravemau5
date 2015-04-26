@@ -173,6 +173,33 @@ instance_create(gvX + 200, gvY + 200, obj_js_base);
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(object_exists(obj_sparkle)){
+    with(obj_sparkle){
+        instance_destroy();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -202,6 +229,7 @@ if instance_exists(gvObj) {
  view_xview[0] = min(max(0,gvX),room_width-view_wview[0]);
  view_yview[0] = min(max(0,gvY),room_height-view_hview[0]);
 }
+
 </string>
           </argument>
         </arguments>

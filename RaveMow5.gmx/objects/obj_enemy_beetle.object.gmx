@@ -139,6 +139,12 @@ if hp &lt;= 0 {
 if other.y &lt; y &amp;&amp; other.vspd &gt; 0 &amp;&amp; other.hurtClock == 0 {
  other.vspd = -12;
  global.points += 50;
+ 
+ //Audio
+ if(global.sfx_on){
+    audio_play_sound(aud_kill, 10, false);
+ }
+
  with instance_create(x,y,par_alert) {
      alertType = global.ENEMY_BEETLE 
      dir = -1;

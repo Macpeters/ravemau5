@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Create world buttons, shoppe button
+playSong();
 num_levels = global.NUM_WORLDS;
 for(i=1; i&lt;num_levels; i++){
          if(i &gt; global.worldsUnlocked){

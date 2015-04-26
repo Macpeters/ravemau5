@@ -230,7 +230,6 @@ if(hp &lt;= 0){
 //Audio
 if(global.sfx_on){
     audio_play_sound(aud_collectable, 10, false);
-    //sound_fade(aud_collectable, 10, 10);
 }
 
 //Alert
@@ -275,6 +274,11 @@ global.points += 10;
 with(other){
     instance_destroy();
 }
+
+//Audio
+if(global.sfx_on){
+    audio_play_sound(aud_collectable, 10, false);
+}
 </string>
           </argument>
         </arguments>
@@ -297,7 +301,36 @@ with(other){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(roo_level_select);
+            <string>with(other){
+    instance_destroy();
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_spring">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Audio
+    if(global.sfx_on){
+        audio_play_sound(aud_spring, 10, false);
+    }
 </string>
           </argument>
         </arguments>
@@ -322,10 +355,14 @@ with(other){
             <kind>1</kind>
             <string>///Get hurt
 if hurtClock == 0 &amp;&amp; other.hurtClock == 0 &amp;&amp; sign(x-other.x) == other.image_xscale {
- hp -= 1;
- hurtClock = 30;
- vspd = -8;
- hspd = sign(x-other.x)*16;
+    //Audio
+    if(global.sfx_on){
+        audio_play_sound(aud_get_hurt, 10, false);
+    }
+    hp -= 1;
+    hurtClock = 30;
+    vspd = -8;
+    hspd = sign(x-other.x)*16;
 }
 </string>
           </argument>
@@ -351,10 +388,14 @@ if hurtClock == 0 &amp;&amp; other.hurtClock == 0 &amp;&amp; sign(x-other.x) == 
             <kind>1</kind>
             <string>///Get hurt
 if !vspd &gt; 0 &amp;&amp; hurtClock == 0 &amp;&amp; other.hurtClock == 0 &amp;&amp; sign(x-other.x) == other.image_xscale {
- hp -= 1;
- hurtClock = 30;
- vspd = -8;
- hspd = sign(x-other.x)*16;
+    //Audio
+    if(global.sfx_on){
+        audio_play_sound(aud_get_hurt, 10, false);
+    }
+    hp -= 1;
+    hurtClock = 30;
+    vspd = -8;
+    hspd = sign(x-other.x)*16;
 }
 </string>
           </argument>
@@ -380,6 +421,10 @@ if !vspd &gt; 0 &amp;&amp; hurtClock == 0 &amp;&amp; other.hurtClock == 0 &amp;&
             <kind>1</kind>
             <string>///Get hurt
 if(hurtClock == 0) {
+    //Audio
+    if(global.sfx_on){
+        audio_play_sound(aud_get_hurt, 10, false);
+    }
  hp -= 1;
  hurtClock = 30;
 }
@@ -408,6 +453,10 @@ if(hurtClock == 0) {
             <string>///If there is no current alert, add a sick alert and take health
 
 if(!instance_exists(par_alert)){
+    //Audio
+    if(global.sfx_on){
+        audio_play_sound(aud_get_hurt, 10, false);
+    }
     hp -= 1;  
     if(hp &gt; 0){
           alert = instance_create(self.x, self.y, par_alert);
