@@ -51,6 +51,7 @@ loadSaveFile();
 global.hp = 0;
 global.glowRings = 50000;
 global.playerChoice = global.BASIC_PLAYER;
+playSong();
 </string>
           </argument>
         </arguments>

@@ -5,7 +5,21 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\aud_collectable</sound>
+    <sounds name="songs">
+      <sound>sound\aud_parlour</sound>
+      <sound>sound\aud_sewer</sound>
+      <sound>sound\aud_ice</sound>
+      <sound>sound\aud_disco</sound>
+      <sound>sound\aud_menu</sound>
+    </sounds>
+    <sounds name="sfx">
+      <sound>sound\aud_collectable</sound>
+      <sound>sound\aud_button_click</sound>
+      <sound>sound\aud_kill</sound>
+      <sound>sound\aud_get_hurt</sound>
+      <sound>sound\aud_level_complete</sound>
+      <sound>sound\aud_spring</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="cutscenes">
@@ -168,6 +182,7 @@
     </scripts>
     <script>scripts\loadSaveFile.gml</script>
     <script>scripts\saveFile.gml</script>
+    <script>scripts\playSong.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fon_hud</font>

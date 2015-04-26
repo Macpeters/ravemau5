@@ -49,6 +49,11 @@
           <argument>
             <kind>1</kind>
             <string>room_goto(roo_level_select);
+
+//Audio
+if(global.sfx_on){
+    audio_play_sound(aud_button_click, 10, false);
+}
 </string>
           </argument>
         </arguments>

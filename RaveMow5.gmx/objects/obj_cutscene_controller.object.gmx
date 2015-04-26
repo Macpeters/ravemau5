@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///get the correct image
+playSong();
 get_cutscene_sprite(self);
 can_click = false;
 click_timer = 10;

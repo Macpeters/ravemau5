@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Create world buttons, shoppe button
+playSong();
 num_levels = global.NUM_LEVELS;
 
 //go back to world suggestion
