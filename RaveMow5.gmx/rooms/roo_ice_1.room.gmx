@@ -91,7 +91,7 @@
     <instance objName="par_solid" x="1216" y="448" name="inst_9A9501BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hud" x="32" y="32" name="inst_1080B8D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="1824" y="160" name="inst_BDF6DDF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="par_weapon" x="32" y="128" name="inst_764EFFB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="par_weapon" x="32" y="96" name="inst_764EFFB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_ice" x="864" y="416" name="inst_83870FD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ice" x="896" y="416" name="inst_BAAA741D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ice" x="1408" y="416" name="inst_13808E05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
