@@ -137,6 +137,10 @@
     </sprites>
     <sprite>sprites\spr_blank_sprite</sprite>
     <sprite>sprites\sprite67</sprite>
+    <sprite>sprites\spr_note</sprite>
+    <sprite>sprites\spr_LevelComplete</sprite>
+    <sprite>sprites\sprite77</sprite>
+    <sprite>sprites\sprite78</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="disco">
@@ -188,13 +192,6 @@
     <font>fonts\fon_hud</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_global_controller</object>
-    <object>objects\obj_game_controller</object>
-    <object>objects\world_select_controller</object>
-    <object>objects\level_select_controller</object>
-    <object>objects\obj_store_controller</object>
-    <object>objects\obj_cutscene_controller</object>
-    <object>objects\obj_settings_controller</object>
     <objects name="In-Game">
       <objects name="Parents">
         <object>objects\par_alert</object>
@@ -226,10 +223,12 @@
         <object>objects\obj_cheese</object>
         <object>objects\obj_glow_ring</object>
       </objects>
-      <object>objects\obj_hud</object>
       <objects name="Particles">
         <object>objects\obj_sparkle</object>
+        <object>objects\obj_musicParticle</object>
       </objects>
+      <object>objects\obj_hud</object>
+      <object>objects\obj_levelComplete</object>
     </objects>
     <objects name="Buttons">
       <object>objects\obj_global_button</object>
@@ -241,6 +240,15 @@
         <object>objects\obj_js_stick</object>
       </objects>
       <object>objects\obj_unlock_world</object>
+    </objects>
+    <objects name="controllers">
+      <object>objects\obj_settings_controller</object>
+      <object>objects\level_select_controller</object>
+      <object>objects\world_select_controller</object>
+      <object>objects\obj_global_controller</object>
+      <object>objects\obj_game_controller</object>
+      <object>objects\obj_store_controller</object>
+      <object>objects\obj_cutscene_controller</object>
     </objects>
   </objects>
   <rooms name="rooms">

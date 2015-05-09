@@ -32,6 +32,7 @@ maxHp = 10;
 attClock = 0;
 curAttack = 0;
 hurtClock = 0;
+inAir = false;
 
 get_player_sprite(self);
 image_speed = 0.1;
@@ -92,15 +93,20 @@ if(hurtClock &gt; 0){
             <kind>1</kind>
             <string>///Sprites
 event_inherited();
-if(inAir == false &amp;&amp; keyboard_check(kRight) == keyboard_check(kLeft) &amp;&amp; sprite_index != spr_player_stand){
-    sprite_index = standing_sprite;
-    image_index = 0;
-}
-if(inAir == false &amp;&amp; keyboard_check(kRight) != keyboard_check(kLeft) &amp;&amp; sprite_index != spr_player_run){
-    sprite_index = running_sprite;
-    image_index = 0;
-}
-if(inAir == true){
+if(!inAir){ 
+    if(hspd != 0){
+        if(sprite_index != running_sprite){
+            image_index = 0;
+        }
+        sprite_index = running_sprite;
+    }
+    if(hspd == 0){
+        if(sprite_index != standing_sprite){
+            image_index = 0;
+        }
+        sprite_index = standing_sprite;
+    }
+}else{
     sprite_index = jumping_sprite;
     if(vspd &lt;= -1){
         image_index = 0;
@@ -237,8 +243,7 @@ alert = instance_create(self.x, self.y, par_alert);
 alert.alertType = global.GLOWRING;
 
 //Increase stats
-global.points += 100;
-global.glowRings += 1;
+global.glow_rings_this_level += 1;
 
 //Destroy glowring
 with(other){
@@ -301,9 +306,11 @@ if(global.sfx_on){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(other){
-    instance_destroy();
+            <string>if(global.sfx_on){
+    audio_play_sound(aud_level_complete, 10, false);
 }
+instance_create(x, y, obj_levelComplete);
+instance_destroy();
 
 </string>
           </argument>

@@ -195,6 +195,12 @@ instance_create(gvX + 200, gvY + 200, obj_js_base);
         instance_destroy();
     }
 }
+
+if(object_exists(obj_musicParticle)){
+    with(obj_musicParticle){
+        instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -229,6 +235,11 @@ if instance_exists(gvObj) {
  view_xview[0] = min(max(0,gvX),room_width-view_wview[0]);
  view_yview[0] = min(max(0,gvY),room_height-view_hview[0]);
 }
+
+global.glow_rings_in_room = instance_number(obj_glow_ring);
+global.glow_rings_this_level = 0;
+global.beetles_in_room = instance_number(obj_enemy_beetle);
+global.beetles_this_level = 0;
 
 </string>
           </argument>
