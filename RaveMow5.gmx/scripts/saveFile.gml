@@ -6,6 +6,7 @@ ini_write_real("score","points", global.points);
 ini_write_real("score", "worldsUnlocked", global.worldsUnlocked);
 ini_write_real("score", "levelsUnlocked", global.levelsUnlocked);
 // Settings
+ini_write_real("settings", "player_choice", global.playerChoice);
 ini_write_real("settings", "sfx_on", global.sfx_on);
 ini_write_real("settings", "music_on", global.music_on);
 

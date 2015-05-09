@@ -184,9 +184,9 @@
       <script>scripts\get_player_btn_sprite.gml</script>
       <script>scripts\get_alert_sprite.gml</script>
     </scripts>
+    <script>scripts\playSong.gml</script>
     <script>scripts\loadSaveFile.gml</script>
     <script>scripts\saveFile.gml</script>
-    <script>scripts\playSong.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fon_hud</font>

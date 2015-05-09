@@ -58,7 +58,7 @@
     <instance objName="obj_player" x="64" y="416" name="inst_5C2E779C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_game_controller" x="32" y="64" name="inst_FAF8C7C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="512" y="160" name="inst_27D289F7" locked="0" code="" scaleX="0" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spring" x="320" y="352" name="inst_3E74109E" locked="0" code="" scaleX="1" scaleY="1.57142996788025" colour="4294967295" rotation="30"/>
+    <instance objName="obj_spring" x="320" y="320" name="inst_3E74109E" locked="0" code="" scaleX="1" scaleY="1.57142996788025" colour="4294967295" rotation="30"/>
     <instance objName="par_solid" x="0" y="416" name="inst_4010567E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="0" y="384" name="inst_187F18A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="0" y="352" name="inst_D42B2611" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -273,7 +273,7 @@
     <instance objName="par_hazard" x="608" y="416" name="inst_CBF290C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_hazard" x="576" y="416" name="inst_E62B6A37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_hazard" x="544" y="416" name="inst_32A1B22C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trigger" x="800" y="160" name="inst_E8BEA500" locked="0" code="trType = global.TR_INVISIBLE_WALL;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trigger" x="896" y="160" name="inst_E8BEA500" locked="0" code="trType = global.TR_INVISIBLE_WALL;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="1152" y="160" name="inst_16EB3E6B" locked="0" code="trType = global.TR_INVISIBLE_WALL;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_beetle" x="992" y="160" name="inst_DD83E43D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_beetle" x="1376" y="416" name="inst_C16F9380" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -297,7 +297,7 @@
     <instance objName="obj_ice" x="1728" y="224" name="inst_9B6D1380" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ice" x="1760" y="224" name="inst_047F6840" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ice" x="1792" y="224" name="inst_06C09C49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spring" x="1376" y="320" name="inst_44BF8242" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spring" x="1376" y="288" name="inst_44BF8242" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

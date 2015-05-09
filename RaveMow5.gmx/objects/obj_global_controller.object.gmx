@@ -19,7 +19,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -49,7 +49,6 @@ global.level = 0;
 
 loadSaveFile();
 global.hp = 0;
-global.playerChoice = global.BASIC_PLAYER;
 playSong();
 </string>
           </argument>

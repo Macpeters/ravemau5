@@ -10,6 +10,7 @@ if file_exists("ravemow5_save.ini"){
     global.worldsUnlocked = ini_read_real("score", "worldsUnlocked", 0);
     global.levelsUnlocked = ini_read_real("score", "levelsUnlocked", 0);
     // load default settings, default to true(1)
+    global.playerChoice = ini_read_real("settings", "player_choice", global.BASIC_PLAYER);
     global.sfx_on = ini_read_real("settings", "sfx_on", 1);
     global.music_on = ini_read_real("settings", "music_on", 1);
     
