@@ -192,6 +192,15 @@
     <font>fonts\fon_hud</font>
   </fonts>
   <objects name="objects">
+    <objects name="controllers">
+      <object>objects\obj_settings_controller</object>
+      <object>objects\level_select_controller</object>
+      <object>objects\world_select_controller</object>
+      <object>objects\obj_global_controller</object>
+      <object>objects\obj_game_controller</object>
+      <object>objects\obj_store_controller</object>
+      <object>objects\obj_cutscene_controller</object>
+    </objects>
     <objects name="In-Game">
       <objects name="Parents">
         <object>objects\par_alert</object>
@@ -240,15 +249,6 @@
         <object>objects\obj_js_stick</object>
       </objects>
       <object>objects\obj_unlock_world</object>
-    </objects>
-    <objects name="controllers">
-      <object>objects\obj_settings_controller</object>
-      <object>objects\level_select_controller</object>
-      <object>objects\world_select_controller</object>
-      <object>objects\obj_global_controller</object>
-      <object>objects\obj_game_controller</object>
-      <object>objects\obj_store_controller</object>
-      <object>objects\obj_cutscene_controller</object>
     </objects>
   </objects>
   <rooms name="rooms">

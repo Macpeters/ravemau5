@@ -31,6 +31,7 @@ if file_exists("ravemow5_save.ini"){
       global.levelsUnlocked = 1;
       global.sfx_on = true;
       global.music_on = true;
+      global.playerChoice = global.BASIC_PLAYER;
       for(var i = 0; i < global.NUM_PLAYER_CHOICES; i++){
         if(i < 2){
             global.playersUnlocked[i] = 1;
