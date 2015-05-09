@@ -37,7 +37,7 @@ for(i=0; i &lt; global.NUM_PLAYER_CHOICES; i++){
         get_player_btn_sprite(button);
     }else{
         button = instance_create(65 + (i*120), 250, obj_unlock_world);
-        button.cost = i;
+        button.cost = i * 20;
         button.buttonWorld = 200 + i;
     }
 }
