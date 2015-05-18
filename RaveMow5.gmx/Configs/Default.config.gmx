@@ -106,11 +106,11 @@
     <option_html5_advertising_type>Supersonic Ads</option_html5_advertising_type>
     <option_html5_allow_fullscreen>True</option_html5_allow_fullscreen>
     <option_html5_alwaysreload>False</option_html5_alwaysreload>
-    <option_html5_browser_title>Created with GameMaker:Studio</option_html5_browser_title>
+    <option_html5_browser_title>RaveMow5</option_html5_browser_title>
     <option_html5_centergame>False</option_html5_centergame>
     <option_html5_flurry_enable>0</option_html5_flurry_enable>
     <option_html5_flurry_id></option_html5_flurry_id>
-    <option_html5_foldername>html5game</option_html5_foldername>
+    <option_html5_foldername>RaveMow5_gamefiles</option_html5_foldername>
     <option_html5_generate_spotify_app>0</option_html5_generate_spotify_app>
     <option_html5_google_analytics_enable>0</option_html5_google_analytics_enable>
     <option_html5_google_tracking_id></option_html5_google_tracking_id>
@@ -141,7 +141,7 @@
     <option_ios_advertising_type>iAds</option_ios_advertising_type>
     <option_ios_app_id>com.macpeters.ravemow5</option_ios_app_id>
     <option_ios_build_version>0</option_ios_build_version>
-    <option_ios_certificate>iPhone Developer: Maryanne Peters (GF346P5587)</option_ios_certificate>
+    <option_ios_certificate>iPhone Distribution: Maryanne Peters (3Z29M4S4A8)</option_ios_certificate>
     <option_ios_device_type>3</option_ios_device_type>
     <option_ios_display_name>RaveMow5</option_ios_display_name>
     <option_ios_flurry_enable>0</option_ios_flurry_enable>
@@ -173,7 +173,7 @@
     <option_ios_orient_landscape_right>-1</option_ios_orient_landscape_right>
     <option_ios_orient_portrait>0</option_ios_orient_portrait>
     <option_ios_orient_portrait_upside_down>0</option_ios_orient_portrait_upside_down>
-    <option_ios_provisioning>RaveMow5_provis - com.macpeters.ravemow5</option_ios_provisioning>
+    <option_ios_provisioning>iOSTeam Provisioning Profile: com.macpeters.ravemow5 - com.macpeters.ravemow5</option_ios_provisioning>
     <option_ios_push_enable>0</option_ios_push_enable>
     <option_ios_scale>-1</option_ios_scale>
     <option_ios_set_device_id></option_ios_set_device_id>

@@ -169,6 +169,7 @@ if(movingLeft &amp;&amp; !movingRight &amp;&amp; hspd &gt; -10){
 }
 
 //attacking
+/*
 if keyboard_check(kAction) &amp;&amp; attClock == false {
  attClock = 14;
  curAttack = 0;
@@ -177,7 +178,7 @@ if keyboard_check(kAction) &amp;&amp; attClock == false {
   owner = par_player;
   image_xscale = other.image_xscale;
  }
-}
+}*/
 
 </string>
           </argument>
