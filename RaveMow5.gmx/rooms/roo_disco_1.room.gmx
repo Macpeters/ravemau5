@@ -367,6 +367,9 @@
     <instance objName="par_solid" x="320" y="288" name="inst_607BFE26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="352" y="288" name="inst_EF70BB82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_solid" x="1984" y="96" name="inst_E67C5BB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="deco" x="256" y="224" name="inst_0FC409B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="deco" x="896" y="288" name="inst_EEB4E912" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-50"/>
+    <instance objName="deco" x="1536" y="192" name="inst_E4B908EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="25"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

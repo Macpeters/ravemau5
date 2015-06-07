@@ -69,7 +69,7 @@ if(view_wview[0] != gvW || view_hview[0] != gvH){
         view_hview[0] = lerp(view_hview[0], gvH, 0.5);
         view_wview[0] = view_hview[0]/view_hport[0]*view_wport[0];
     } else{
-        view_wview[0] = lerp(view_wview[0], hvW, 0.5);
+        view_wview[0] = lerp(view_wview[0], gvW, 0.5);
         view_hview[0] = view_wview[0]/view_wport[0] * view_hport[0];
     }
 
@@ -190,14 +190,29 @@ instance_create(gvX + 200, gvY + 200, obj_js_base);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(object_exists(obj_sparkle)){
+            <string>///make sure all particles are actually destroyed
+
+//sparkle
+if(object_exists(obj_sparkle)){
     with(obj_sparkle){
         instance_destroy();
     }
 }
-
+//music
 if(object_exists(obj_musicParticle)){
     with(obj_musicParticle){
+        instance_destroy();
+    }
+}
+//steam
+if(instance_exists(obj_steam)){
+    with(obj_steam){
+        instance_destroy();
+    }
+}
+//snow
+if(instance_exists(obj_snow)){
+    with(obj_snow){
         instance_destroy();
     }
 }
@@ -263,11 +278,61 @@ global.beetles_this_level = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///save the file, destroy any remaining sparkles
-saveFile();
-if(instance_exists(obj_sparkle)){
-    with(obj_sparkle){
-        instance_destroy();
+            <string>///Update the Viewport and backgrounds
+if(view_wview[0] != gvW || view_hview[0] != gvH){
+    var tempW, tempH;
+    tempW = view_wview[0];
+    tempH = view_hview[0];
+    
+    //change the size of the view smoothly
+    if(gvW/view_wport[0] &gt;= gvH/view_hport[0]){
+        view_hview[0] = lerp(view_hview[0], global.gvH, 0.5);
+        view_wview[0] = view_hview[0]/view_hport[0]*view_wport[0];
+    } else{
+        view_wview[0] = lerp(view_wview[0], gvW, 0.5);
+        view_hview[0] = view_wview[0]/view_wport[0] * view_hport[0];
+    }
+
+    view_xview[0] -= (view_wview[0]-tempW)/2;
+    view_yview[0] -= (view_hview[0]-tempH)/2;
+}
+//keep the view within the room
+if(view_wview[0] &gt; room_width){
+    view_wview[0] = room_width;
+    view_hview[0] = view_wview[0]/view_wport[0]*view_hport[0];
+}
+if(view_hview[0] &gt; room_height){
+    view_hview[0] = room_height;
+    view_wview[0] = view_hview[0]/view_hport[0]*view_wport[0];
+}
+if instance_exists(gvObj) {
+ global.gvX = min(max(0,gvObj.x-view_wview[0]/2+(view_wview[0]/10*gvObj.image_xscale)),room_width-view_wview[0]);
+ global.gvY = min(max(0,gvObj.y-view_hview[0]/2),room_height-view_hview[0]);
+}
+//place the view
+view_xview[0] = min(max(0,lerp(view_xview[0],global.gvX,.15)),room_width-view_wview[0]);
+view_yview[0] = min(max(0,lerp(view_yview[0],global.gvY,.3)),room_height-view_hview[0]);
+
+/* if the player is not touching the trigger, 
+the view will revert to default settings */
+global.gvW = gvWStart;
+global.gvH = gvHStart;
+
+
+//Backgrounds
+//8 is the max number of backgrounds allowed in gamemaker
+for(i=0; i&lt;8; i++){
+    //don't worry about backgrounds that haven't been chosen
+    if(background_visible[i] == true){
+        //horizontal
+        if(background_width[i] != room_width){
+            background_x[i] = view_xview[0]/(room_width-view_wview[0])*(room_width-background_width[i]);
+        }
+        //vertical 
+        if(background_height[i] != room_height){
+        //Divide by zero error
+          //  background_y[i] = view_yview[0]/(room_height-view_hview[0])*(room_height-background_height[i]);
+        }
     }
 }
 </string>
@@ -292,7 +357,16 @@ if(instance_exists(obj_sparkle)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///do not draw the icon
+            <string>///Setup View Variables
+gvX = view_xview[0];
+gvY = view_yview[0];
+gvW = view_wview[0];
+gvH = view_hview[0];
+gvObj = view_object[0];
+
+
+
+
 </string>
           </argument>
         </arguments>
