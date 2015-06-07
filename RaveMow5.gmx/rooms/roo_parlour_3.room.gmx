@@ -406,6 +406,9 @@
     <instance objName="obj_trigger" x="1568" y="384" name="inst_63EDD1C9" locked="0" code="trType = global.TR_INVISIBLE_WALL;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trigger" x="1408" y="384" name="inst_510272CE" locked="0" code="trType = global.TR_INVISIBLE_WALL;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_beetle" x="1504" y="384" name="inst_110E5A40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="deco" x="320" y="160" name="inst_0022CAD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="deco" x="1216" y="288" name="inst_73BACD0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="deco" x="1792" y="192" name="inst_FD4653EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

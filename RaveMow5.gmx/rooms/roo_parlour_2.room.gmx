@@ -321,6 +321,9 @@
     <instance objName="par_jumpthrough" x="1728" y="224" name="inst_2E1094A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_jumpthrough" x="1472" y="224" name="inst_351C9390" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy_slime" x="1600" y="416" name="inst_CC941522" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="deco" x="480" y="320" name="inst_2546453D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="deco" x="1152" y="64" name="inst_C8850A9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="deco" x="1376" y="320" name="inst_A59C650B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

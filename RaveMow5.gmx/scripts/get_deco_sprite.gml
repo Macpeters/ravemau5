@@ -7,7 +7,7 @@ world = global.world;
     sprite = spr_steamer;
     break;
    case global.WORLD_PARLOUR:
-    sprite = spr_solid_parlour;
+    sprite = spr_plant;
     break;
    case global.WORLD_DISCO: 
     sprite = spr_laser;

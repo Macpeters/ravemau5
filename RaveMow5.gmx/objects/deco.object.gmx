@@ -59,6 +59,12 @@ if(global.world == global.WORLD_SEWER){
         instance_destroy();
     }
 }
+
+if(instance_exists(obj_snow)){
+    with(obj_snow){
+        instance_destroy();
+    }
+}
 </string>
           </argument>
         </arguments>
