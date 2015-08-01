@@ -25,7 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(16, 16, obj_exit_level_button);
+            <string>///draw the exit button if this room is a level
+
+if(room != roo_world_select &amp;&amp; 
+        room != roo_level_select &amp;&amp; 
+        room != roo_store &amp;&amp; 
+        room != roo_settings){
+    instance_create(16, 16, obj_exit_level_button);
+}
+
 </string>
           </argument>
         </arguments>

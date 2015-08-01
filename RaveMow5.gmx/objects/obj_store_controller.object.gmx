@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>///Draw all the player choices, and the button back to level select
 //back to level selection
+instance_create(80, 80, obj_hud);
+
 button = instance_create(80, 80, obj_global_button);
 button.buttonWorld = global.BUTTON_PLAY;
 
@@ -69,17 +71,12 @@ for(i=0; i &lt; global.NUM_PLAYER_CHOICES; i++){
             <string>///Draw the chosen player, available glowrings
 draw_set_font(fon_hud);
 draw_set_color(c_white);
-draw_text(380, 20, "Store");
 
 get_global_btn_sprite(global.playerChoice);
 
 //player area
-draw_sprite_ext( spr_hud, 0, 0, 350, 1, 4, 0, c_white, 1 );
-draw_text(0, 368, "Your Player:");
+draw_sprite_ext( spr_hud, 0, 0, 350, 1.5, 4, 0, c_white, 1 );
 draw_sprite(sprite, 0, 280, 410);
-//stats
-draw_sprite(spr_glow_ring, 0, 400, 410);
-draw_text(450,410,global.glowRings)
 </string>
           </argument>
         </arguments>

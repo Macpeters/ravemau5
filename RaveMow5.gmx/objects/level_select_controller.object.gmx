@@ -27,49 +27,23 @@
             <kind>1</kind>
             <string>///Create world buttons, shoppe button
 playSong();
+instance_create(0, 0, obj_hud);
+
 num_levels = global.NUM_LEVELS;
 
-//go back to world suggestion
-button = instance_create(80, 80, obj_global_button);
+//go back to world selection
+button = instance_create(80, 120, obj_global_button);
 button.buttonWorld = global.BUTTON_PLAY; 
 
 //the available levels for that world
 for(i=1; i &lt;= num_levels; i++){
-  button = instance_create(120 + (i*100), 150, obj_level_select_button);
+  button = instance_create(120 + (i*100), 200, obj_level_select_button);
   button.buttonWorld = global.world;
   button.buttonLevel = i;
 }    
 //the shoppe button
-button = instance_create(100, 300, obj_global_button);
+button = instance_create(275, 325, obj_global_button);
 button.buttonWorld = global.BUTTON_SHOPPE; 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw available glowrings
-draw_sprite_ext( spr_hud, 0, 0, 350, 1, 4, 0, c_white, 1 );
-draw_set_font(fon_hud);
-draw_set_color(c_white);
-draw_sprite(spr_glow_ring, 0, 400, 410);
-draw_text(450,410,global.glowRings)
 </string>
           </argument>
         </arguments>

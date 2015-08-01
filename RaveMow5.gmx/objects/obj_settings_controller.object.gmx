@@ -25,17 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//go back to world suggestion
-button = instance_create(80, 80, obj_global_button);
+            <string>instance_create(0, 0, obj_hud);
+
+//go back to world suggestion
+button = instance_create(110, 130, obj_global_button);
 button.buttonWorld = global.BUTTON_PLAY; 
 
 //toggle sfx
-button = instance_create(200, 200, obj_global_button);
+button = instance_create(260, 210, obj_global_button);
 button.buttonWorld = global.BUTTON_SFX; 
 
 //toggle music
-button = instance_create(350, 200, obj_global_button);
+button = instance_create(380, 210, obj_global_button);
 button.buttonWorld = global.BUTTON_MUSIC; 
+
 </string>
           </argument>
         </arguments>
@@ -58,7 +61,12 @@ button.buttonWorld = global.BUTTON_MUSIC;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///do not draw the icon
+            <string>///draw the credits, not the icon
+draw_set_font(fon_hud);
+draw_set_color(c_white);
+draw_text(40, 300, "All programming, music, artwork");
+draw_text(40, 340, "done by Maryanne Peters");
+draw_text(40, 400, "www.macpeters.com");
 
 
 </string>

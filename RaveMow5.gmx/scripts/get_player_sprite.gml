@@ -7,9 +7,9 @@ playerChoice = global.playerChoice;
      jumping_sprite = spr_shutter_shade_air;
     break;
    case global.SKRILLIX:
-    standing_sprite = spr_skrillix_stand;
-    running_sprite = spr_skrillix_run;
-    jumping_sprite = spr_skrillix_air;
+    standing_sprite = spr_squealix_stand;
+    running_sprite = spr_squealix_run;
+    jumping_sprite = spr_squealix_air;
     break;
    case global.PINK_FUNFUR:
     standing_sprite = spr_pink_funfur_stand;

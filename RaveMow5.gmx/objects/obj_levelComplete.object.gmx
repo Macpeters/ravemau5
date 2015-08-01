@@ -81,10 +81,14 @@ global.beetlesKilled += global.beetles_this_level;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(sprite_index, 0, 0, 0);
+            <string>///draw sprite, stats, and continue button
+
+draw_sprite(sprite_index, 0, 30, 30);
 
 draw_set_font(fon_hud);
-draw_set_color(c_white);
+draw_set_color(c_black);
+
+draw_text(200, 80, "Level Complete");
 
 imageX = 200; 
 textX = 250;
@@ -93,7 +97,7 @@ outOfX = 350;
 pointsImageX = 420;
 pointsX = 450;
  
-glowY = 150;
+glowY = 225;
 draw_sprite(spr_glow_ring, 0, imageX, glowY);
 draw_text(textX, glowY, global.glow_rings_this_level) 
 draw_text(slashX, glowY, "/");
@@ -101,7 +105,7 @@ draw_text(outOfX, glowY, global.glow_rings_in_room);
 draw_sprite(spr_health_alert, 0, pointsImageX, glowY);
 draw_text(pointsX, glowY, glowPoints);
 
-beetleY = 200
+beetleY = 275
 draw_sprite(spr_enemy_beetle, 0, imageX + 16, beetleY + 16)
 draw_text(textX, beetleY, global.beetles_this_level);
 draw_text(slashX, beetleY, "/");

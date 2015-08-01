@@ -109,7 +109,6 @@ world = global.world;
             <string>///Draw the right sprite for this world
 draw_set_font(fon_hud);
 draw_set_color(c_black);
-draw_text(360, 20, "Level Select");
 world = global.world;
 
 switch (buttonWorld) {

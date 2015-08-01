@@ -29,8 +29,6 @@
       <sprite>sprites\spr_LevelComplete</sprite>
     </sprites>
     <sprites name="Buttons">
-      <sprite>sprites\spr_btn_play</sprite>
-      <sprite>sprites\spr_button_shoppe</sprite>
       <sprites name="world_buttons">
         <sprite>sprites\spr_lvl_sewer</sprite>
         <sprite>sprites\spr_lvl_parlour</sprite>
@@ -43,14 +41,13 @@
         <sprite>sprites\spr_btn_blue_funfur</sprite>
         <sprite>sprites\spr_btn_pink_funfur</sprite>
         <sprite>sprites\spr_btn_shutter_shade</sprite>
+        <sprite>sprites\spr_btn_squealix</sprite>
       </sprites>
       <sprite>sprites\spr_hud</sprite>
-      <sprite>sprites\spr_btn_exitLevel</sprite>
       <sprites name="joystick">
         <sprite>sprites\spr_js_base</sprite>
         <sprite>sprites\spr_js_stick</sprite>
       </sprites>
-      <sprite>sprites\spr_unlock_world</sprite>
       <sprites name="icons">
         <sprite>sprites\gameCtrIcon</sprite>
         <sprite>sprites\globalCtrlIcon</sprite>
@@ -60,9 +57,13 @@
         <sprite>sprites\storeIcon</sprite>
         <sprite>sprites\worldIcon</sprite>
       </sprites>
-      <sprite>sprites\spr_btn_settings</sprite>
+      <sprite>sprites\spr_btn_exitLevel</sprite>
       <sprite>sprites\spr_btn_music</sprite>
+      <sprite>sprites\spr_btn_play</sprite>
+      <sprite>sprites\spr_btn_settings</sprite>
       <sprite>sprites\spr_btn_sfx</sprite>
+      <sprite>sprites\spr_button_shoppe</sprite>
+      <sprite>sprites\spr_unlock_world</sprite>
     </sprites>
     <sprites name="Collectables">
       <sprite>sprites\spr_glow_ring</sprite>
@@ -129,6 +130,11 @@
         <sprite>sprites\spr_shutter_shade_air</sprite>
         <sprite>sprites\spr_shutter_shade_run</sprite>
       </sprites>
+      <sprites name="squealix">
+        <sprite>sprites\spr_squealix_stand</sprite>
+        <sprite>sprites\spr_squealix_run</sprite>
+        <sprite>sprites\spr_squealix_air</sprite>
+      </sprites>
     </sprites>
     <sprites name="Projectiles">
       <sprite>sprites\space_invader</sprite>
@@ -168,10 +174,10 @@
       <background>background\bg_main</background>
     </backgrounds>
     <backgrounds name="ice">
-      <background>background\bg_hills</background>
       <background>background\bg_ice01</background>
       <background>background\bg_ice02</background>
       <background>background\bg_ice03</background>
+      <background>background\bg_ice04</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -207,6 +213,7 @@
       <object>objects\obj_game_controller</object>
       <object>objects\obj_store_controller</object>
       <object>objects\obj_cutscene_controller</object>
+      <object>objects\obj_hud</object>
     </objects>
     <objects name="In-Game">
       <objects name="Parents">
@@ -245,7 +252,6 @@
         <object>objects\obj_snow</object>
         <object>objects\obj_musicParticle</object>
       </objects>
-      <object>objects\obj_hud</object>
       <object>objects\obj_levelComplete</object>
       <object>objects\deco</object>
     </objects>

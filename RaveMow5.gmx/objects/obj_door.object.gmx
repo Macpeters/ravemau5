@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x, y, obj_musicParticle);
+            <string>///music particle
+instance_create(x, y, obj_musicParticle);
 </string>
           </argument>
         </arguments>

@@ -27,52 +27,26 @@
             <kind>1</kind>
             <string>///Create world buttons, shoppe button
 playSong();
+instance_create(0, 0, obj_hud);
+
 num_levels = global.NUM_WORLDS;
 for(i=1; i&lt;num_levels; i++){
          if(i &gt; global.worldsUnlocked){
-              button = instance_create(80 + (i*100), 150, obj_unlock_world);
+              button = instance_create(80 + (i*100), 200, obj_unlock_world);
               button.cost = i * 10;
          }else{
-              button = instance_create(75 + (i*100), 105, obj_global_button);
+              button = instance_create(75 + (i*100), 155, obj_global_button);
          }
          button.buttonWorld = i;
          button.buttonLevel = 4;
 }
 //the shoppe button
-button = instance_create(100, 300, obj_global_button);
+button = instance_create(250, 350, obj_global_button);
 button.buttonWorld = global.BUTTON_SHOPPE;    
 
 //the settings button
-button = instance_create(600, 300, obj_global_button);
+button = instance_create(480, 350, obj_global_button);
 button.buttonWorld = global.BUTTON_SETTINGS;   
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw the available glowrings
-draw_sprite_ext( spr_hud, 0, 0, 350, 1, 4, 0, c_white, 1 );
-draw_set_font(fon_hud);
-draw_set_color(c_white);
-draw_sprite(spr_glow_ring, 0, 400, 410);
-draw_text(450,410,global.glowRings)
 </string>
           </argument>
         </arguments>

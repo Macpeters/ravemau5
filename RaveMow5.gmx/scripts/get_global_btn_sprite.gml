@@ -38,7 +38,7 @@ buttonType = argument[0];
     sprite = spr_btn_shutter_shade;
     break;
    case global.SKRILLIX:
-    sprite = spr_btn_skrillix;
+    sprite = spr_btn_squealix;
     break;
    case global.PINK_FUNFUR:
     sprite = spr_btn_pink_funfur;

@@ -307,10 +307,12 @@ if(global.sfx_on){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.sfx_on){
+            <string>///level complete overlay, sound
+
+if(global.sfx_on){
     audio_play_sound(aud_level_complete, 10, false);
 }
-instance_create(x, y, obj_levelComplete);
+instance_create(x + 20, y + 20, obj_levelComplete);
 instance_destroy();
 
 </string>
