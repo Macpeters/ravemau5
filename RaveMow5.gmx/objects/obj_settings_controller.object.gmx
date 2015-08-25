@@ -32,11 +32,11 @@ button = instance_create(110, 130, obj_global_button);
 button.buttonWorld = global.BUTTON_PLAY; 
 
 //toggle sfx
-button = instance_create(260, 210, obj_global_button);
+button = instance_create(260, 225, obj_global_button);
 button.buttonWorld = global.BUTTON_SFX; 
 
 //toggle music
-button = instance_create(380, 210, obj_global_button);
+button = instance_create(380, 225, obj_global_button);
 button.buttonWorld = global.BUTTON_MUSIC; 
 
 </string>
@@ -62,12 +62,15 @@ button.buttonWorld = global.BUTTON_MUSIC;
           <argument>
             <kind>1</kind>
             <string>///draw the credits, not the icon
-draw_set_font(fon_hud);
+draw_set_font(fon_info);
 draw_set_color(c_white);
-draw_text(40, 300, "All programming, music, artwork");
-draw_text(40, 340, "done by Maryanne Peters");
-draw_text(40, 400, "www.macpeters.com");
+draw_text(180, 50, "All programming, music, artwork");
+draw_text(180, 90, "done by Maryanne Peters");
+draw_text(180, 130, "www.macpeters.com");
 
+draw_text(180, 300, "Any relation to existing IP is");
+draw_text(180, 340, "purely satirical.  Ravemow5 has");
+draw_text(180, 380, "no official affilitations");
 
 </string>
           </argument>

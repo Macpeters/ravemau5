@@ -8,8 +8,8 @@
     <option_android_advertising_key></option_android_advertising_key>
     <option_android_advertising_type>MoPub</option_android_advertising_type>
     <option_android_amazon_game_circle>0</option_android_amazon_game_circle>
-    <option_android_amazon_gc_achievements>-1</option_android_amazon_gc_achievements>
-    <option_android_amazon_gc_leaderboards>-1</option_android_amazon_gc_leaderboards>
+    <option_android_amazon_gc_achievements>0</option_android_amazon_gc_achievements>
+    <option_android_amazon_gc_leaderboards>0</option_android_amazon_gc_leaderboards>
     <option_android_amazon_gc_whispersync>0</option_android_amazon_gc_whispersync>
     <option_android_amazon_iap>0</option_android_amazon_iap>
     <option_android_apk_expansion>0</option_android_apk_expansion>
@@ -21,7 +21,7 @@
     <option_android_arch_x86>True</option_android_arch_x86>
     <option_android_build_version>2</option_android_build_version>
     <option_android_color_depth>0</option_android_color_depth>
-    <option_android_display_name>Ravemau5</option_android_display_name>
+    <option_android_display_name>Ravemow5</option_android_display_name>
     <option_android_flurry_enable>0</option_android_flurry_enable>
     <option_android_flurry_id></option_android_flurry_id>
     <option_android_google_analytics_enable>0</option_android_google_analytics_enable>
@@ -141,7 +141,7 @@
     <option_ios_advertising_type>iAds</option_ios_advertising_type>
     <option_ios_app_id>com.macpeters.ravemow5</option_ios_app_id>
     <option_ios_build_version>0</option_ios_build_version>
-    <option_ios_certificate>iPhone Distribution: Maryanne Peters (3Z29M4S4A8)</option_ios_certificate>
+    <option_ios_certificate>iPhone Developer: Maryanne Peters (GF346P5587)</option_ios_certificate>
     <option_ios_device_type>3</option_ios_device_type>
     <option_ios_display_name>RaveMow5</option_ios_display_name>
     <option_ios_flurry_enable>0</option_ios_flurry_enable>
@@ -173,7 +173,7 @@
     <option_ios_orient_landscape_right>-1</option_ios_orient_landscape_right>
     <option_ios_orient_portrait>0</option_ios_orient_portrait>
     <option_ios_orient_portrait_upside_down>0</option_ios_orient_portrait_upside_down>
-    <option_ios_provisioning>iOSTeam Provisioning Profile: com.macpeters.ravemow5 - com.macpeters.ravemow5</option_ios_provisioning>
+    <option_ios_provisioning>RaveMow5 - com.macpeters.ravemow5</option_ios_provisioning>
     <option_ios_push_enable>0</option_ios_push_enable>
     <option_ios_scale>-1</option_ios_scale>
     <option_ios_set_device_id></option_ios_set_device_id>

@@ -203,6 +203,7 @@
   <fonts name="fonts">
     <font>fonts\fon_hud</font>
     <font>fonts\fon_names</font>
+    <font>fonts\fon_info</font>
   </fonts>
   <objects name="objects">
     <objects name="controllers">

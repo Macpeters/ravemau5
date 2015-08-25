@@ -50,7 +50,6 @@ global.level = 0;
 loadSaveFile();
 global.hp = 0;
 playSong();
-global.glowRings = 50000;
 </string>
           </argument>
         </arguments>
