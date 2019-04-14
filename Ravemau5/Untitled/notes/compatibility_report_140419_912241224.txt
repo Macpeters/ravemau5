@@ -1,0 +1,439 @@
+Converting GML script: ${project_dir}/scripts/loadSaveFile/loadSaveFile.gml
+Converted description /// @description  C:Users/Mac/AppData/local/2dPlatforme
+Converted string - line 20: 'playerChoice-' -> "playerChoice-"
+
+Converting GML script: ${project_dir}/scripts/saveFile/saveFile.gml
+Converted string - line 16: 'playerChoice-' -> "playerChoice-"
+
+Font fon_hud has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/fon_hud/fon_hud.gms1.png
+!!! Font fon_names uses a font (Segoe Print) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}/fonts/fon_names/fon_names.gms1.png
+Converting GML script: ${project_dir}/objects/obj_settings_controller/Draw_0.gml
+Converted description /// @description do not draw the ico
+
+Converting GML script: ${project_dir}/objects/level_select_controller/Create_0.gml
+Converted description /// @description Create world buttons, shoppe butto
+
+Converting GML script: ${project_dir}/objects/level_select_controller/Draw_64.gml
+Converted description /// @description Draw available glowring
+
+Converting GML script: ${project_dir}/objects/level_select_controller/Draw_0.gml
+Converted description /// @description do not draw the ico
+
+Converting GML script: ${project_dir}/objects/world_select_controller/Create_0.gml
+Converted description /// @description Create world buttons, shoppe butto
+
+Converting GML script: ${project_dir}/objects/world_select_controller/Draw_64.gml
+Converted description /// @description Draw the available glowring
+
+Converting GML script: ${project_dir}/objects/world_select_controller/Draw_0.gml
+Converted description /// @description do not draw the ico
+
+Converting GML script: ${project_dir}/objects/obj_global_controller/Draw_0.gml
+Converted description /// @description do not draw the ico
+
+Converting GML script: ${project_dir}/objects/obj_game_controller/Create_0.gml
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 4: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 5: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 6: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 7: view_object[0] -> __view_get( e__VW.Object, 0 )
+Converted description /// @description Setup View Variable
+
+Converting GML script: ${project_dir}/objects/obj_game_controller/Step_2.gml
+Converted builtin - line 46: background_visible[i] -> __background_get( e__BG.Visible, i )
+Converted builtin - line 49: background_x[i] = view_xview[0]/(room_width-view_wview[0])*(room_width-background_width[i]) -> __background_set( e__BG.X, i, view_xview[0]/(room_width-view_wview[0])*(room_width-background_width[i]) )
+Converted builtin - line 48: background_width[i] -> __background_get( e__BG.Width, i )
+Converted builtin - line 52: background_height[i] -> __background_get( e__BG.Height, i )
+Converted builtin - line 33: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 16: view_xview[0] -= (view_wview[0]-tempW)/2 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - ((view_wview[0]-tempW)/2) )
+Converted builtin - line 34: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 17: view_yview[0] -= (view_hview[0]-tempH)/2 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - ((view_hview[0]-tempH)/2) )
+Converted builtin - line 2: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 12: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 13: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 20: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 22: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 10: view_wview[0] = view_hview[0]/view_hport[0]*view_wport[0] -> __view_set( e__VW.WView, 0, view_hview[0]/view_hport[0]*view_wport[0] )
+Converted builtin - line 21: view_wview[0] = room_width -> __view_set( e__VW.WView, 0, room_width )
+Converted builtin - line 26: view_wview[0] = view_hview[0]/view_hport[0]*view_wport[0] -> __view_set( e__VW.WView, 0, view_hview[0]/view_hport[0]*view_wport[0] )
+Converted builtin - line 2: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 5: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 9: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 24: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 25: view_hview[0] = room_height -> __view_set( e__VW.HView, 0, room_height )
+Converted builtin - line 8: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 13: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 22: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 8: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 13: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 22: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted description /// @description Update the Viewport and background
+Converted builtin - line 49: background_width[i] -> __background_get( e__BG.Width, i )
+Converted builtin - line 49: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 33: view_xview[0] = min(max(0,lerp(__view_get( e__VW.XView, 0 ),gvX,.15)),room_width-__view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, min(max(0,lerp(__view_get( e__VW.XView, 0 ),gvX,.15)),room_width-__view_get( e__VW.WView, 0 )) )
+Converted builtin - line 34: view_yview[0] = min(max(0,lerp(__view_get( e__VW.YView, 0 ),gvY,.3)),room_height-__view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, min(max(0,lerp(__view_get( e__VW.YView, 0 ),gvY,.3)),room_height-__view_get( e__VW.HView, 0 )) )
+Converted builtin - line 16: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 49: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 12: view_wview[0] = lerp(__view_get( e__VW.WView, 0 ), gvW, 0.5) -> __view_set( e__VW.WView, 0, lerp(__view_get( e__VW.WView, 0 ), gvW, 0.5) )
+Converted builtin - line 10: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 17: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 9: view_hview[0] = lerp(__view_get( e__VW.HView, 0 ), gvH, 0.5) -> __view_set( e__VW.HView, 0, lerp(__view_get( e__VW.HView, 0 ), gvH, 0.5) )
+Converted builtin - line 13: view_hview[0] = __view_get( e__VW.WView, 0 )/__view_get( e__VW.WPort, 0 ) * __view_get( e__VW.HPort, 0 ) -> __view_set( e__VW.HView, 0, __view_get( e__VW.WView, 0 )/__view_get( e__VW.WPort, 0 ) * __view_get( e__VW.HPort, 0 ) )
+Converted builtin - line 22: view_hview[0] = __view_get( e__VW.WView, 0 )/__view_get( e__VW.WPort, 0 )*__view_get( e__VW.HPort, 0 ) -> __view_set( e__VW.HView, 0, __view_get( e__VW.WView, 0 )/__view_get( e__VW.WPort, 0 )*__view_get( e__VW.HPort, 0 ) )
+Converted builtin - line 10: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 26: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 10: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 26: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+
+Converting GML script: ${project_dir}/objects/obj_game_controller/Mouse_56.gml
+Converted description /// @description Remove the controller, if there is on
+
+Converting GML script: ${project_dir}/objects/obj_game_controller/Mouse_53.gml
+Converted description /// @description Add the controlle
+
+Converting GML script: ${project_dir}/objects/obj_game_controller/Other_5.gml
+Converted description /// @description make sure all particles are actually destroye
+
+Converting GML script: ${project_dir}/objects/obj_game_controller/Other_4.gml
+Converted builtin - line 3: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 10: view_xview[0] = min(max(0,gvX),room_width-view_wview[0]) -> __view_set( e__VW.XView, 0, min(max(0,gvX),room_width-view_wview[0]) )
+Converted builtin - line 4: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 11: view_yview[0] = min(max(0,gvY),room_height-view_hview[0]) -> __view_set( e__VW.YView, 0, min(max(0,gvY),room_height-view_hview[0]) )
+Converted builtin - line 5: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 6: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 7: view_object[0] -> __view_get( e__VW.Object, 0 )
+Converted description /// @description Setup Game Vie
+Converted builtin - line 10: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 11: view_hview[0] -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: ${project_dir}/objects/obj_game_controller/Other_3.gml
+Converted builtin - line 46: background_visible[i] -> __background_get( e__BG.Visible, i )
+Converted builtin - line 49: background_x[i] = view_xview[0]/(room_width-view_wview[0])*(room_width-background_width[i]) -> __background_set( e__BG.X, i, view_xview[0]/(room_width-view_wview[0])*(room_width-background_width[i]) )
+Converted builtin - line 48: background_width[i] -> __background_get( e__BG.Width, i )
+Converted builtin - line 52: background_height[i] -> __background_get( e__BG.Height, i )
+Converted builtin - line 33: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 16: view_xview[0] -= (view_wview[0]-tempW)/2 -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - ((view_wview[0]-tempW)/2) )
+Converted builtin - line 34: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 17: view_yview[0] -= (view_hview[0]-tempH)/2 -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - ((view_hview[0]-tempH)/2) )
+Converted builtin - line 2: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 12: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 13: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 20: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 22: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 10: view_wview[0] = view_hview[0]/view_hport[0]*view_wport[0] -> __view_set( e__VW.WView, 0, view_hview[0]/view_hport[0]*view_wport[0] )
+Converted builtin - line 21: view_wview[0] = room_width -> __view_set( e__VW.WView, 0, room_width )
+Converted builtin - line 26: view_wview[0] = view_hview[0]/view_hport[0]*view_wport[0] -> __view_set( e__VW.WView, 0, view_hview[0]/view_hport[0]*view_wport[0] )
+Converted builtin - line 2: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 5: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 9: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 24: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 25: view_hview[0] = room_height -> __view_set( e__VW.HView, 0, room_height )
+Converted builtin - line 8: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 13: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 22: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 8: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 13: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 22: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted description /// @description Update the Viewport and background
+Converted builtin - line 49: background_width[i] -> __background_get( e__BG.Width, i )
+Converted builtin - line 49: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 33: view_xview[0] = min(max(0,lerp(__view_get( e__VW.XView, 0 ),global.gvX,.15)),room_width-__view_get( e__VW.WView, 0 )) -> __view_set( e__VW.XView, 0, min(max(0,lerp(__view_get( e__VW.XView, 0 ),global.gvX,.15)),room_width-__view_get( e__VW.WView, 0 )) )
+Converted builtin - line 34: view_yview[0] = min(max(0,lerp(__view_get( e__VW.YView, 0 ),global.gvY,.3)),room_height-__view_get( e__VW.HView, 0 )) -> __view_set( e__VW.YView, 0, min(max(0,lerp(__view_get( e__VW.YView, 0 ),global.gvY,.3)),room_height-__view_get( e__VW.HView, 0 )) )
+Converted builtin - line 16: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 49: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 12: view_wview[0] = lerp(__view_get( e__VW.WView, 0 ), gvW, 0.5) -> __view_set( e__VW.WView, 0, lerp(__view_get( e__VW.WView, 0 ), gvW, 0.5) )
+Converted builtin - line 10: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 17: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 9: view_hview[0] = lerp(__view_get( e__VW.HView, 0 ), global.gvH, 0.5) -> __view_set( e__VW.HView, 0, lerp(__view_get( e__VW.HView, 0 ), global.gvH, 0.5) )
+Converted builtin - line 13: view_hview[0] = __view_get( e__VW.WView, 0 )/__view_get( e__VW.WPort, 0 ) * __view_get( e__VW.HPort, 0 ) -> __view_set( e__VW.HView, 0, __view_get( e__VW.WView, 0 )/__view_get( e__VW.WPort, 0 ) * __view_get( e__VW.HPort, 0 ) )
+Converted builtin - line 22: view_hview[0] = __view_get( e__VW.WView, 0 )/__view_get( e__VW.WPort, 0 )*__view_get( e__VW.HPort, 0 ) -> __view_set( e__VW.HView, 0, __view_get( e__VW.WView, 0 )/__view_get( e__VW.WPort, 0 )*__view_get( e__VW.HPort, 0 ) )
+Converted builtin - line 10: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 26: view_wport[0] -> __view_get( e__VW.WPort, 0 )
+Converted builtin - line 10: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 26: view_hport[0] -> __view_get( e__VW.HPort, 0 )
+
+Converting GML script: ${project_dir}/objects/obj_game_controller/Draw_0.gml
+Converted builtin - line 2: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 3: view_yview[0] -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 4: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 5: view_hview[0] -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 6: view_object[0] -> __view_get( e__VW.Object, 0 )
+Converted description /// @description Setup View Variable
+
+Converting GML script: ${project_dir}/objects/obj_store_controller/Create_0.gml
+Converted description /// @description Draw all the player choices, and the button back to level selec
+
+Converting GML script: ${project_dir}/objects/obj_store_controller/Draw_64.gml
+Converted description /// @description Draw the chosen player, available glowring
+
+Converting GML script: ${project_dir}/objects/obj_store_controller/Draw_0.gml
+Converted description /// @description Do not draw the ico
+
+Converting GML script: ${project_dir}/objects/obj_cutscene_controller/Create_0.gml
+Converted description /// @description get the correct imag
+
+Converting GML script: ${project_dir}/objects/obj_cutscene_controller/Step_0.gml
+Converted description /// @description prevent accidental click throug
+
+Converting GML script: ${project_dir}/objects/obj_cutscene_controller/Mouse_50.gml
+Converted description /// @description goto level_selec
+
+Converting GML script: ${project_dir}/objects/obj_cutscene_controller/Draw_0.gml
+Converted description /// @description draw_sprite(sprite, 0, x, y);/// @param sprite
+/// @param  0
+/// @param  x
+/// @param  y
+
+Converting GML script: ${project_dir}/objects/par_alert/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/par_alert/Destroy_0.gml
+Converted description /// @description Destroy any remaining particle, if death, restart roo
+
+Converting GML script: ${project_dir}/objects/par_alert/Step_0.gml
+Converted description /// @description Move and Fad
+
+Converting GML script: ${project_dir}/objects/par_alert/Draw_0.gml
+Converted description /// @description get and Draw sprit
+
+Converting GML script: ${project_dir}/objects/par_entity/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/par_entity/Step_2.gml
+Converted description /// @description Physic
+
+Converting GML script: ${project_dir}/objects/par_entity/Step_1.gml
+Converted description /// @description Check stat
+
+Converting GML script: ${project_dir}/objects/par_hazard/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/par_jumpthrough/Draw_0.gml
+Converted description /// @description standard draw sprite(sprite, image, x, y
+
+Converting GML script: ${project_dir}/objects/par_solid/Create_0.gml
+Converted description /// @description Get the sprite based on the worl
+
+Converting GML script: ${project_dir}/objects/par_solid/Draw_0.gml
+Converted description /// @description Default draw function for the gotten sprit
+
+Converting GML script: ${project_dir}/objects/par_weapon/Create_0.gml
+Converted description /// @description Setup shooting speed and powe
+
+Converting GML script: ${project_dir}/objects/par_weapon/Step_1.gml
+Converted description /// @description Shoot if ready, otherwise advance cloc
+
+Converting GML script: ${project_dir}/objects/obj_player/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_player/Step_2.gml
+Converted description /// @description Fightin
+
+Converting GML script: ${project_dir}/objects/obj_player/Collision_366438ea-6cb5-48b2-93a5-4d5a24003a78.gml
+Converted description /// @description Create alert, add points, play soun
+
+Converting GML script: ${project_dir}/objects/obj_player/Collision_764a28f7-d81f-4b04-b1d5-6bd4647d73a6.gml
+Converted description /// @description gain health, destroy chees
+
+Converting GML script: ${project_dir}/objects/obj_player/Collision_6b92cc04-d0df-4363-8df7-6406a6043ed4.gml
+Converted description /// @description Get hur
+
+Converting GML script: ${project_dir}/objects/obj_player/Collision_bbd6521b-2f86-4a9a-b68f-f8175cde8520.gml
+Converted description /// @description Get hur
+
+Converting GML script: ${project_dir}/objects/obj_player/Collision_194fcc40-e4e0-4038-aa3f-0ff4c38ec9c6.gml
+Converted description /// @description Get hur
+
+Converting GML script: ${project_dir}/objects/obj_player/Collision_c818897b-0688-4c25-8c45-19a83593912a.gml
+Converted description /// @description If there is no current alert, add a sick alert and take healt
+
+Converting GML script: ${project_dir}/objects/obj_enemy_beetle/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_enemy_beetle/Step_0.gml
+Converted description /// @description Movemen
+
+Converting GML script: ${project_dir}/objects/obj_enemy_beetle/Collision_240eba6c-af1a-46ab-9fa7-032360fe0409.gml
+Converted description /// @description Di
+
+Converting GML script: ${project_dir}/objects/obj_enemy_slime/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_enemy_slime/Step_0.gml
+Converted description /// @description Bounc
+
+Converting GML script: ${project_dir}/objects/obj_moving_platform/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_moving_platform/Destroy_0.gml
+Converted description /// @description Cleanu
+
+Converting GML script: ${project_dir}/objects/obj_moving_platform/Step_0.gml
+Converted description /// @description Mov
+
+Converting GML script: ${project_dir}/objects/obj_moving_platform/Collision_788096e2-0b58-4096-a7c9-96dbfbcf97c2.gml
+Converted description /// @description Reac
+
+Converting GML script: ${project_dir}/objects/obj_spring/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_spring/Destroy_0.gml
+Converted description /// @description Cleanu
+
+Converting GML script: ${project_dir}/objects/obj_spring/Step_0.gml
+Converted description /// @description Functionin
+
+Converting GML script: ${project_dir}/objects/obj_spring/Other_7.gml
+Converted description /// @description Rese
+
+Converting GML script: ${project_dir}/objects/obj_ice/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_ice/Destroy_0.gml
+Converted description /// @description Cleanu
+
+Converting GML script: ${project_dir}/objects/obj_ice/Step_1.gml
+Converted description /// @description Mov
+
+Converting GML script: ${project_dir}/objects/obj_gravity/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_gravity/Destroy_0.gml
+Converted description /// @description Cleanu
+
+Converting GML script: ${project_dir}/objects/obj_gravity/Step_1.gml
+Converted description /// @description Mov
+
+Converting GML script: ${project_dir}/objects/obj_trigger/Create_0.gml
+Converted description /// @description //Default values can be changed in the room via creation cod
+
+Converting GML script: ${project_dir}/objects/obj_trigger/Step_2.gml
+Converted description /// @description Execut
+
+Converting GML script: ${project_dir}/objects/obj_glow_ring/Step_0.gml
+Converted description /// @description rotate the sprite 5 degree
+
+Converting GML script: ${project_dir}/objects/obj_hud/Draw_64.gml
+Converted description /// @description draw overlay, number glowrings, points and h
+
+Converting GML script: ${project_dir}/objects/obj_hud/Draw_0.gml
+Converted description /// @description do not draw the ico
+
+Converting GML script: ${project_dir}/objects/obj_levelComplete/Create_0.gml
+Converted description /// @description Add all the points u
+
+Converting GML script: ${project_dir}/objects/obj_levelComplete/Draw_0.gml
+Converted description /// @description do not draw the sprit
+
+Converting GML script: ${project_dir}/objects/deco/Create_0.gml
+Converted description /// @description slow down animatio
+
+Converting GML script: ${project_dir}/objects/deco/Draw_0.gml
+Converted description /// @description draw the correct sprit
+
+Converting GML script: ${project_dir}/objects/obj_global_button/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_global_button/Step_0.gml
+Converted description /// @description Count delay to avoid double click
+
+Converting GML script: ${project_dir}/objects/obj_global_button/Mouse_0.gml
+Converted description /// @description Go to level select, store, or bac
+
+Converting GML script: ${project_dir}/objects/obj_global_button/Draw_0.gml
+Converted description /// @description Draw the right sprite for this worl
+
+Converting GML script: ${project_dir}/objects/obj_level_select_button/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_level_select_button/Mouse_0.gml
+Converted description /// @description Enter the leve
+
+Converting GML script: ${project_dir}/objects/obj_level_select_button/Draw_0.gml
+Converted description /// @description Draw the right sprite for this worl
+
+Converting GML script: ${project_dir}/objects/obj_player_select_button/Create_0.gml
+Converted description /// @description Setu
+
+Converting GML script: ${project_dir}/objects/obj_player_select_button/Mouse_0.gml
+Converted description /// @description Choose the player represented by this butto
+
+Converting GML script: ${project_dir}/objects/obj_player_select_button/Draw_0.gml
+Converted description /// @description Draw the player sprite and nam
+
+Converting GML script: ${project_dir}/objects/obj_exit_level_button/Step_0.gml
+Converted description /// @description draw_sprite(sprite_index, 0, 0, 0);/// @param sprite_index
+/// @param  0
+/// @param  0
+/// @param  0
+
+Converting GML script: ${project_dir}/objects/obj_js_base/Create_0.gml
+Converted description /// @description Set the position to the initial mouse position, add the stic
+
+Converting GML script: ${project_dir}/objects/obj_js_base/Destroy_0.gml
+Converted description /// @description Cleanu
+
+Converting GML script: ${project_dir}/objects/obj_js_base/Step_0.gml
+Converted description /// @description Update position of base and stic
+
+Converting GML script: ${project_dir}/objects/obj_js_stick/Create_0.gml
+Converted description /// @description Set default start positio
+
+Converting GML script: ${project_dir}/objects/obj_js_stick/Mouse_0.gml
+Converted description /// @description Determine movement by comparing start position with curren
+
+Converting GML script: ${project_dir}/objects/obj_unlock_world/Create_0.gml
+Converted description /// @description Setup world, cost, unlockable = fals
+
+Converting GML script: ${project_dir}/objects/obj_unlock_world/Mouse_4.gml
+Converted description /// @description unlock if unlockabl
+
+macOS icon ${options_dir}/mac/icons/icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'aud_parlour' - setting to default audio group
+Missing audiogroup for sound: 'aud_sewer' - setting to default audio group
+Missing audiogroup for sound: 'aud_ice' - setting to default audio group
+Missing audiogroup for sound: 'aud_disco' - setting to default audio group
+Missing audiogroup for sound: 'aud_menu' - setting to default audio group
+Missing audiogroup for sound: 'aud_collectable' - setting to default audio group
+Missing audiogroup for sound: 'aud_button_click' - setting to default audio group
+Missing audiogroup for sound: 'aud_kill' - setting to default audio group
+Missing audiogroup for sound: 'aud_get_hurt' - setting to default audio group
+Missing audiogroup for sound: 'aud_level_complete' - setting to default audio group
+Missing audiogroup for sound: 'aud_spring' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'background/__background_get.gml'
+Added compatibility script 'background/__background_get_element.gml'
+Added compatibility script 'background/__background_get_internal.gml'
+Added compatibility script 'background/__background_set.gml'
+Added compatibility script 'background/__background_set_element.gml'
+Added compatibility script 'background/__background_set_internal.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'
