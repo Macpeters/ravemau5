@@ -1,10 +1,10 @@
 /// @description Setup Game View
 globalvar gvXStart, gvYStart, gvWStart, gvHStart, gvObjStart;
-gvXStart = __view_get( e__VW.XView, 0 );
-gvYStart = __view_get( e__VW.YView, 0 );
+//gvXStart = __view_get( e__VW.XView, 0 );
+//gvYStart = __view_get( e__VW.YView, 0 );
 gvWStart = __view_get( e__VW.WView, 0 );
 gvHStart = __view_get( e__VW.HView, 0 );
-gvObjStart = __view_get( e__VW.Object, 0 );
+//gvObjStart = __view_get( e__VW.Object, 0 );
 
 if instance_exists(gvObj) {
  __view_set( e__VW.XView, 0, min(max(0,gvX),room_width-__view_get( e__VW.WView, 0 )) );

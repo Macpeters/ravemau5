@@ -1977,6 +1977,25 @@
             }
         },
         {
+            "Key": "7662a313-eb44-4599-896d-c7ff400d8cf9",
+            "Value": {
+                "id": "22d31030-3967-47d3-958a-6dc26a2ab468",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sewer_brick_01_32\/sewer_brick_01_32.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7668e7cc-fc5d-425a-92e3-be9ff90501de",
             "Value": {
                 "id": "c1fad4f8-fe66-4f40-8d88-bc73bd29923f",
@@ -3019,6 +3038,25 @@
                 ],
                 "resourcePath": "objects\/world_select_controller\/world_select_controller.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a13327bf-029b-4572-8c39-367a25d77823",
+            "Value": {
+                "id": "d6618bfb-2782-4b92-93ff-c0df7bc6f649",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/a13327bf-029b-4572-8c39-367a25d77823.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
